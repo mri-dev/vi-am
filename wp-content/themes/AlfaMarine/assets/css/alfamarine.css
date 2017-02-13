@@ -3,3 +3,67 @@ body, html {
   height: 100%;
   max-height: 100%;
 }
+
+/* Avada Menü fix */
+/* line 9, sass/alfamarine.scss */
+.fusion-main-menu > ul > li > a {
+  text-transform: uppercase;
+}
+
+/* line 12, sass/alfamarine.scss */
+.fusion-header-menu-align-center .fusion-main-menu {
+  background: #bde3fa;
+  float: left;
+  margin-left: 120px;
+}
+
+/* line 17, sass/alfamarine.scss */
+.fusion-header-menu-align-center .fusion-main-menu > ul > li {
+  padding: 0;
+}
+
+/* line 20, sass/alfamarine.scss */
+.fusion-header-menu-align-center .fusion-main-menu > ul > li > a {
+  padding: 0 20px;
+}
+
+/* line 23, sass/alfamarine.scss */
+.fusion-secondary-main-menu {
+  border: none;
+  border-bottom: 10px solid #bde3fa;
+  margin-top: -20px;
+}
+
+/* line 28, sass/alfamarine.scss */
+.fusion-header-v4 .fusion-header {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+/* line 33, sass/alfamarine.scss */
+.fusion-main-menu > ul > li > a:hover,
+.fusion-header-menu-align-center .fusion-main-menu > ul > li.current_page_item > a {
+  border-color: #223b73;
+  background: #8ecff6;
+}
+
+/* line 37, sass/alfamarine.scss */
+.fusion-megamenu-holder {
+  border: 10px solid #8ecff6 !important;
+}
+
+/* line 40, sass/alfamarine.scss */
+.fusion-page-title-bar .fusion-breadcrumbs a {
+  color: #444444;
+}
+
+/* line 43, sass/alfamarine.scss */
+.fusion-breadcrumb-sep {
+  color: #cacaca;
+}
+
+/* END Avada Menü fix */
+/* line 48, sass/alfamarine.scss */
+.vehicles-holder {
+  min-height: 550px;
+}

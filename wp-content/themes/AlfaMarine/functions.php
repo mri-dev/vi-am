@@ -13,6 +13,9 @@
   define( 'ROOT', str_replace(get_option('siteurl'), '//'.DOMAIN, get_stylesheet_directory_uri()) );
   define( 'IMG', ROOT.'/images');
 
+  // BACKEND, CONTROLLERS, CLASSES
+  require_once "includes/include.php";
+
   /**
   * Szükséges alap scriptek és stíluslapok
   **/
