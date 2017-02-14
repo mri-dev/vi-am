@@ -67,3 +67,169 @@ body, html {
 .vehicles-holder {
   min-height: 550px;
 }
+
+/* line 52, sass/alfamarine.scss */
+.fusion-footer footer.fusion-footer-widget-area {
+  background-image: url("../../images/footer-bg-bottom-v1.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 0;
+  padding-bottom: 95px;
+}
+/* line 60, sass/alfamarine.scss */
+.fusion-footer footer.fusion-footer-widget-area .widget_nav_menu {
+  margin: 5px 0;
+}
+/* line 64, sass/alfamarine.scss */
+.fusion-footer footer.fusion-footer-widget-area ul {
+  text-align: center;
+}
+/* line 66, sass/alfamarine.scss */
+.fusion-footer footer.fusion-footer-widget-area ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 12px;
+  line-height: 1;
+}
+/* line 73, sass/alfamarine.scss */
+.fusion-footer footer.fusion-footer-widget-area ul li a {
+  font-family: 'Oswald';
+  font-weight: normal;
+  font-size: 1.4em;
+  text-shadow: 0 1px 3px #000000 !important;
+}
+/* line 79, sass/alfamarine.scss */
+.fusion-footer footer.fusion-footer-widget-area ul li a:before {
+  content: "";
+  display: none;
+}
+
+/* Footer */
+/* line 89, sass/alfamarine.scss */
+.fusion-footer {
+  position: relative;
+}
+/* line 91, sass/alfamarine.scss */
+.fusion-footer:before {
+  content: "";
+  position: absolute;
+  width: 1920px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -197px;
+  z-index: 100;
+  height: 262px;
+  background-image: url("../../images/footer-bg-top-v1.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+/* line 110, sass/alfamarine.scss */
+footer .custom-footer-logo {
+  margin-bottom: 20px;
+  margin-top: -35px;
+}
+/* line 114, sass/alfamarine.scss */
+footer .footer-facebook-likebox {
+  position: absolute;
+  right: 125px;
+  bottom: -82px;
+}
+/* line 119, sass/alfamarine.scss */
+footer .am-contact {
+  font-size: 1.2em;
+  font-family: 'Oswald';
+  font-weight: normal;
+}
+/* line 124, sass/alfamarine.scss */
+footer .am-contact i {
+  font-size: 22px;
+  width: 22px;
+  text-align: center;
+  margin-right: 10px;
+}
+/* line 132, sass/alfamarine.scss */
+footer a:hover {
+  color: #f9d179 !important;
+}
+/* line 136, sass/alfamarine.scss */
+footer .fusion-copyright-notice {
+  color: #bae0f3;
+}
+/* line 139, sass/alfamarine.scss */
+footer .sailboat-draw {
+  pointer-events: none;
+  position: absolute;
+  left: 250px;
+  bottom: -90px;
+  height: 240px;
+  animation: sailboat 20s infinite;
+}
+/* line 147, sass/alfamarine.scss */
+footer .sailboat-draw img {
+  max-height: 100%;
+}
+
+/* END Footer */
+/* KEYFRAMES */
+@webkit-keyframes sailboat {
+  /* line 157, sass/alfamarine.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 158, sass/alfamarine.scss */
+  25% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  /* line 159, sass/alfamarine.scss */
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 160, sass/alfamarine.scss */
+  75% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  /* line 161, sass/alfamarine.scss */
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes sailboat {
+  /* line 164, sass/alfamarine.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 165, sass/alfamarine.scss */
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  /* line 166, sass/alfamarine.scss */
+  50% {
+    transform: rotate(0deg);
+  }
+
+  /* line 167, sass/alfamarine.scss */
+  75% {
+    transform: rotate(10deg);
+  }
+
+  /* line 168, sass/alfamarine.scss */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* END KEYFRAMES */

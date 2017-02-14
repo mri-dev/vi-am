@@ -6,7 +6,7 @@
   define( 'TD', 'am' );
   define( 'DEVMODE', true);
   define( 'DOMAIN', $_SERVER['HTTP_HOST'] );
-  define( 'FB_APP_ID', '' );
+  define( 'FB_APP_ID', '167138103787862' );
   define( 'GOOGLE_API_KEY', '');
 
   // Routes

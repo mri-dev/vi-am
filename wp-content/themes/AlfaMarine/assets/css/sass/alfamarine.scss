@@ -48,3 +48,123 @@ body, html {
 .vehicles-holder{
   min-height: 550px;
 }
+
+.fusion-footer footer.fusion-footer-widget-area{
+  background-image: url('../../images/footer-bg-bottom-v1.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 0;
+  padding-bottom: 95px;
+
+  .widget_nav_menu{
+    margin: 5px 0;
+  }
+
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      padding: 12px;
+      line-height: 1;
+
+      a {
+        font-family: 'Oswald';
+        font-weight: normal;
+        font-size: 1.4em;
+        text-shadow: 0 1px 3px #000000 !important;
+
+        &:before {
+          content:"";
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+.fusion-footer{
+  position: relative;
+  &:before {
+    content:"";
+    position: absolute;
+    width: 1920px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -197px;
+    z-index: 100;
+    height: 262px;
+    background-image: url('../../images/footer-bg-top-v1.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
+}
+footer {
+  .custom-footer-logo{
+    margin-bottom: 20px;
+    margin-top: -35px;
+  }
+  .footer-facebook-likebox{
+    position: absolute;
+    right: 125px;
+    bottom: -82px;
+  }
+  .am-contact{
+    font-size: 1.2em;
+    font-family: 'Oswald';
+    font-weight: normal;
+
+    i {
+      font-size: 22px;
+      width: 22px;
+      text-align: center;
+      margin-right: 10px;
+    }
+  }
+
+  a:hover {
+    color: #f9d179 !important;
+  }
+
+  .fusion-copyright-notice{
+    color: #bae0f3;
+  }
+  .sailboat-draw{
+    pointer-events: none;
+    position: absolute;
+    left: 250px;
+    bottom: -90px;
+    height: 240px;
+    animation: sailboat 20s infinite;
+
+    img {
+      max-height: 100%;
+    }
+  }
+}
+
+/* END Footer */
+
+/* KEYFRAMES */
+@webkit-keyframes sailboat {
+    0% { -webkit-transform: rotate(0deg); }
+    25% { -webkit-transform: rotate(-10deg); }
+    50% { -webkit-transform: rotate(0deg); }
+    75% { -webkit-transform: rotate(10deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+@keyframes sailboat {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+/* END KEYFRAMES */
