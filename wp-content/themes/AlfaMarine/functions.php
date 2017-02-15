@@ -43,4 +43,14 @@
   	return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
   }
   add_filter('language_attributes', 'add_opengraph_doctype');
+
+  /**
+  * Logó szlogen
+  **/
+  function after_logo_content()
+  {
+    echo '<div class="logo-slogan">'.__('Balatoni és Külföldi hajótúrák', TD).'</div>';
+  }
+  add_filter('avada_logo_append', 'after_logo_content');
+
 ?>
