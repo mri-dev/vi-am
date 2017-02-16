@@ -27,6 +27,17 @@
   add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
   /**
+  * Konfig beállítások
+  *
+  **/
+  function app_init_settings()
+  {
+    add_post_type_support( 'post', 'excerpt' );
+  }
+  add_action( 'init', 'app_init_settings' );
+
+
+  /**
   * Egyedi, további stíluslapok
   **/
   function app_theme_enqueue_styles()
