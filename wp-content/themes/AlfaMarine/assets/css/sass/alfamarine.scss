@@ -80,7 +80,9 @@ body, html {
 }
 
 .vehicles-holder{
-  min-height: 550px;
+  &.style-slide {
+      min-height: 550px;
+  }
 }
 
 .fusion-footer footer.fusion-footer-widget-area{

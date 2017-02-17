@@ -33,9 +33,74 @@
   function app_init_settings()
   {
     add_post_type_support( 'post', 'excerpt' );
+    create_custom_posttypes();
   }
   add_action( 'init', 'app_init_settings' );
 
+  function create_custom_posttypes()
+  {
+    // Hajók
+    $boats = new PostTypeFactory( 'boats' );
+  	$boats->set_textdomain( TD );
+  	$boats->set_icon('tag');
+  	$boats->set_name( 'Hajó', 'Hajók' );
+  	$boats->set_labels( array(
+  		'add_new' => 'Új %s',
+  		'not_found_in_trash' => 'Nincsenek %s a lomtárban.',
+  		'not_found' => 'Nincsenek %s a listában.',
+  		'add_new_item' => 'Új %s létrehozása',
+  	) );
+
+  	$boats->add_taxonomy( 'positions', array(
+  		'rewrite' => 'positions',
+  		'name' => array('Bevetési hely', 'Bevetési helyek'),
+  		'labels' => array(
+  			'menu_name' => 'Bevetési helyek',
+  			'add_new_item' => 'Új %s',
+  			'search_items' => '%s keresése',
+  			'all_items' => '%s',
+  		)
+  	) );
+  	$boats->create();
+    add_post_type_support( 'boats', 'excerpt' );
+
+    // Hajótúrák
+    $tours = new PostTypeFactory( 'tours' );
+    $tours->set_textdomain( TD );
+    $tours->set_icon('pressthis');
+    $tours->set_name( 'Túra', 'Túrák' );
+    $tours->set_labels( array(
+      'add_new' => 'Új %s',
+      'not_found_in_trash' => 'Nincsenek %s a lomtárban.',
+      'not_found' => 'Nincsenek %s a listában.',
+      'add_new_item' => 'Új %s létrehozása',
+    ) );
+
+    $tours->add_taxonomy( 'tour_category', array(
+      'rewrite' => 'category',
+      'name' => array('Kategória', 'Kategóriák'),
+      'labels' => array(
+        'menu_name' => '%s',
+        'add_new_item' => 'Új %s',
+        'search_items' => '%s keresése',
+        'all_items' => '%s',
+      )
+    ) );
+
+    $tours->add_taxonomy( 'tour_groups', array(
+  		'rewrite' => 'tour_groups',
+  		'name' => array('Csoport', 'Csoportok'),
+  		'labels' => array(
+  			'menu_name' => 'Csoportok',
+  			'add_new_item' => 'Új %s',
+  			'search_items' => '%s keresése',
+  			'all_items' => '%s',
+  		)
+  	) );
+
+    $tours->create();
+    add_post_type_support( 'tours', 'excerpt' );
+  }
 
   /**
   * Egyedi, további stíluslapok
