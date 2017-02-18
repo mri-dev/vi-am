@@ -71,6 +71,7 @@ class ToursSC
           $i++;
 
           $tour = new Tour($page->ID);
+          $data['i'] = $i;
           $data['post'] = $tour;
 
           $o .= $t->load_template($data);
