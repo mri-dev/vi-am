@@ -1,5 +1,5 @@
 <?php
-  class Tour
+  class Boat
   {
     private $id = false;
     private $data = array();
@@ -25,23 +25,22 @@
       return $img;
     }
 
+    public function getParams()
+    {
+      $params = array();
+      for ($i=0; $i < 5 ; $i++) {
+        $params['param'.$i] = array(
+          'label' => 'param'.$i,
+          'value' => 'value'.$i
+        );
+      }
+
+      return $params;
+    }
+
     public function MaxFo()
     {
       return (int)8;
-    }
-
-    public function Price()
-    {
-      return '26 990 Ft';
-    }
-    public function RunDate()
-    {
-      return date(get_option('date_format', ''));
-    }
-
-    public function DeadlineDate()
-    {
-      return date(get_option('date_format', ''));
     }
 
     public function ID()

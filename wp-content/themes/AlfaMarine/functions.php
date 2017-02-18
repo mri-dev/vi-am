@@ -61,6 +61,17 @@
   			'all_items' => '%s',
   		)
   	) );
+    $boats->add_taxonomy( 'boat_category', array(
+      'rewrite' => 'boat_category',
+      'name' => array('Kategória', 'Kategóriák'),
+      'labels' => array(
+        'menu_name' => '%s',
+        'add_new_item' => 'Új %s',
+        'search_items' => '%s keresése',
+        'all_items' => '%s',
+      )
+    ) );
+
   	$boats->create();
     add_post_type_support( 'boats', 'excerpt' );
 

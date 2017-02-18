@@ -4,4 +4,5 @@
   require_once "ShortcodeTemplates.php";
   require_once "AjaxRequests.php";
   require_once "Tour.class.php";
+  require_once "Boat.class.php";
 ?>
