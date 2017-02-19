@@ -1,30 +1,28 @@
-@charset "UTF-8";
-/* line 3, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 3, sass/alfamarine.scss */
 body, html {
   height: 100%;
   max-height: 100%;
 }
 
 /* Avada Menü fix */
-/* line 9, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 9, sass/alfamarine.scss */
 .fusion-main-menu > ul > li > a {
   text-transform: uppercase;
 }
 
-/* line 12, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 12, sass/alfamarine.scss */
 .fusion-header-menu-align-center .fusion-main-menu {
   background: #bde3fa;
   float: left;
   margin-left: 120px;
 }
 
-/* line 17, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 17, sass/alfamarine.scss */
 .fusion-header-menu-align-center .fusion-main-menu > ul > li {
   padding: 0;
   position: relative;
 }
-
-/* line 21, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 21, sass/alfamarine.scss */
 .fusion-header-menu-align-center .fusion-main-menu > ul > li:after {
   content: "";
   position: absolute;
@@ -44,21 +42,21 @@ body, html {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #223b73 0%, #9bd0f0 87%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#223b73', endColorstr='#9bd0f0',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#223b73', endColorstr='#9bd0f0',GradientType=0 );
   /* IE6-9 */
 }
 
-/* line 42, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 42, sass/alfamarine.scss */
 .fusion-header-menu-align-center .fusion-main-menu > ul > li:last-child:after {
   display: none;
 }
 
-/* line 45, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 45, sass/alfamarine.scss */
 .fusion-header-menu-align-center .fusion-main-menu > ul > li > a {
   padding: 0 20px;
 }
 
-/* line 48, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 48, sass/alfamarine.scss */
 .fusion-secondary-main-menu {
   border: none;
   margin-top: -20px;
@@ -67,42 +65,42 @@ body, html {
   background-position: center bottom;
 }
 
-/* line 55, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 55, sass/alfamarine.scss */
 .fusion-header-v4 .fusion-header {
   border-bottom: none !important;
   padding-bottom: 0 !important;
 }
 
-/* line 59, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 60, sass/alfamarine.scss */
 .fusion-main-menu > ul > li > a:hover,
 .fusion-header-menu-align-center .fusion-main-menu > ul > li.current_page_item > a {
   border-color: #223b73;
   background: #8ecff6;
 }
 
-/* line 64, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 64, sass/alfamarine.scss */
 .fusion-megamenu-holder {
   border: 10px solid #8ecff6 !important;
 }
 
-/* line 67, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 67, sass/alfamarine.scss */
 .fusion-page-title-bar .fusion-breadcrumbs a {
   color: #444444;
 }
 
-/* line 70, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 70, sass/alfamarine.scss */
 .fusion-breadcrumb-sep {
   color: #cacaca;
 }
 
-/* line 73, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 73, sass/alfamarine.scss */
 .fusion-megamenu-title a {
   text-transform: uppercase;
   font-size: 0.9em;
   text-align: center;
 }
 
-/* line 78, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 78, sass/alfamarine.scss */
 .fusion-megamenu {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2efef+0,fffcfc+100 */
   background: #f2efef;
@@ -113,11 +111,11 @@ body, html {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #f2efef 0%, #fffcfc 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2efef', endColorstr='#fffcfc',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2efef', endColorstr='#fffcfc',GradientType=0 );
   /* IE6-9 */
 }
 
-/* line 86, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 86, sass/alfamarine.scss */
 .fusion-main-menu .sub-menu {
   left: 50%;
   border: 5px solid #8ecff6 !important;
@@ -130,28 +128,25 @@ body, html {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #f2efef 0%, #fffcfc 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2efef', endColorstr='#fffcfc',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2efef', endColorstr='#fffcfc',GradientType=0 );
   /* IE6-9 */
-  -webkit-box-shadow: 0 5px 20px -5px #000000;
-  -moz-box-shadow: 0 5px 20px -5px #000000;
-  box-shadow: 0 5px 20px -5px #000000;
+  -webkit-box-shadow: 0 5px 20px -5px black;
+  -moz-box-shadow: 0 5px 20px -5px black;
+  box-shadow: 0 5px 20px -5px black;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-
-/* line 102, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 102, sass/alfamarine.scss */
 .fusion-main-menu .sub-menu a {
   text-align: center;
   padding: 15px !important;
 }
-
-/* line 106, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 106, sass/alfamarine.scss */
 .fusion-main-menu .sub-menu a:hover {
   color: white;
 }
-
-/* line 111, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 111, sass/alfamarine.scss */
 .fusion-main-menu .sub-menu:before {
   content: "";
   position: absolute;
@@ -167,47 +162,44 @@ body, html {
 }
 
 /* END Avada Menü fix */
-/* line 127, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 127, sass/alfamarine.scss */
 .fusion-separator.sep-shadow:after {
   background: radial-gradient(ellipse at 50% -50%, rgba(62, 94, 139, 0.38) 0px, rgba(255, 255, 255, 0) 65%);
 }
 
-/* line 130, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 130, sass/alfamarine.scss */
 .fusion-separator .icon-wrapper i:before {
   font-size: 18px;
 }
 
-/* line 135, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 135, sass/alfamarine.scss */
 .vehicles-holder.style-slide {
   min-height: 250px;
 }
 
-/* line 140, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 140, sass/alfamarine.scss */
 .button-pill {
   border-radius: 50px;
 }
 
-/* line 143, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 143, sass/alfamarine.scss */
 .pagination {
   text-align: center;
   margin: 15px auto;
   float: none;
 }
-
-/* line 148, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 148, sass/alfamarine.scss */
 .pagination a.page-numbers {
   color: #616161;
   margin: 0 5px;
   font-size: 0.9em;
 }
-
-/* line 154, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 155, sass/alfamarine.scss */
 .pagination .page-numbers.prev,
 .pagination .page-numbers.next {
   color: #444444;
 }
-
-/* line 159, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 159, sass/alfamarine.scss */
 .pagination a.page-numbers {
   background: #e2e2e2;
   display: inline-block;
@@ -221,28 +213,24 @@ body, html {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-
-/* line 172, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 172, sass/alfamarine.scss */
 .pagination a.page-numbers:hover {
   background: #2995c6;
   color: white;
 }
-
-/* line 177, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 178, sass/alfamarine.scss */
 .pagination a.page-numbers.prev,
 .pagination a.page-numbers.next {
   width: auto;
   padding: 0 10px;
   color: #8c8c8c;
 }
-
-/* line 183, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 183, sass/alfamarine.scss */
 .pagination a.page-numbers.prev:hover,
 .pagination a.page-numbers.next:hover {
   color: white;
 }
-
-/* line 187, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 187, sass/alfamarine.scss */
 .pagination .page-numbers.current {
   background: #2995c6;
   border: none;
@@ -259,7 +247,7 @@ body, html {
   border-radius: 30px;
 }
 
-/* line 203, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 203, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area {
   background-image: url("../../images/footer-bg-bottom-v1.svg");
   background-position: bottom center;
@@ -268,18 +256,15 @@ body, html {
   padding-top: 0;
   padding-bottom: 95px;
 }
-
-/* line 211, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 211, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area .widget_nav_menu {
   margin: 5px 0;
 }
-
-/* line 215, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 215, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area ul {
   text-align: center;
 }
-
-/* line 217, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 217, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area ul li {
   display: inline-block;
   *display: inline;
@@ -287,23 +272,21 @@ body, html {
   padding: 12px;
   line-height: 1;
 }
-
-/* line 224, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 224, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area ul li a {
   font-family: 'Oswald';
   font-weight: normal;
   font-size: 1.4em;
   text-shadow: 0 1px 3px #000000 !important;
 }
-
-/* line 230, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 230, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area ul li a:before {
   content: "";
   display: none;
 }
 
 /* Header */
-/* line 240, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 240, sass/alfamarine.scss */
 .logo-slogan {
   font-family: 'Oswald';
   text-transform: uppercase;
@@ -314,20 +297,18 @@ body, html {
   font-size: 1.7em;
 }
 
-/* line 251, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 251, sass/alfamarine.scss */
 .fusion-header-content-3-wrapper {
   padding-bottom: 23px;
 }
-
-/* line 255, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 255, sass/alfamarine.scss */
 .fusion-header-content-3-wrapper .search-table .search-field input[type=text] {
   height: 32px;
   border-color: #bde3fa !important;
   color: #223b73 !important;
   font-size: 0.95em;
 }
-
-/* line 263, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 263, sass/alfamarine.scss */
 .fusion-header-content-3-wrapper .search-table .search-button input[type=submit] {
   font-size: 20px;
   height: 32px;
@@ -337,14 +318,13 @@ body, html {
   background: transparent !important;
   color: #bde3fa !important;
 }
-
-/* line 271, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 271, sass/alfamarine.scss */
 .fusion-header-content-3-wrapper .search-table .search-button input[type=submit]:hover {
   background: #bde3fa !important;
   color: white !important;
 }
 
-/* line 279, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 279, sass/alfamarine.scss */
 .fusion-header-v4 .fusion-logo .fusion-header-content-3-wrapper .fusion-header-tagline a {
   background: #97d3f7 !important;
   padding: 8px;
@@ -353,13 +333,37 @@ body, html {
   border-radius: 5px;
 }
 
-/* line 286, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 286, sass/alfamarine.scss */
 .fusion-social-networks {
   overflow: initial;
 }
 
 /* END Header */
-/* line 293, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 291, sass/alfamarine.scss */
+.sc-header {
+  margin: 0 0 40px 0;
+}
+/* line 292, sass/alfamarine.scss */
+.sc-header h1 {
+  text-align: center;
+}
+/* line 295, sass/alfamarine.scss */
+.sc-header h1 strong {
+  color: #5ebbf3;
+}
+
+/* line 301, sass/alfamarine.scss */
+.sc-list-nodata {
+  text-align: center;
+  padding: 10px 0 80px 0;
+}
+/* line 305, sass/alfamarine.scss */
+.sc-list-nodata h3 {
+  text-align: center;
+  color: black;
+}
+
+/* line 313, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder > .list-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,29 +371,24 @@ body, html {
   flex-wrap: wrap;
   margin: 0 -20px;
 }
-
-/* line 302, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 322, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item {
   position: relative;
 }
-
-/* line 304, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 324, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper {
   padding: 20px;
 }
-
-/* line 307, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 327, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .title {
   height: 85px;
   overflow: hidden;
 }
-
-/* line 310, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 330, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .title h3 {
   margin: 0 0 10px 0;
 }
-
-/* line 312, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 332, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .title h3 a {
   text-transform: uppercase;
   line-height: 1;
@@ -397,13 +396,11 @@ body, html {
   font-size: 1.3em;
   letter-spacing: -1px;
 }
-
-/* line 319, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 339, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .title h3 a:hover {
   color: #5ebbf3;
 }
-
-/* line 326, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 346, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .img {
   height: 255px;
   max-height: 255px;
@@ -414,8 +411,7 @@ body, html {
   -moz-border-radius: 12px;
   border-radius: 12px;
 }
-
-/* line 336, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 356, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .img img {
   max-height: 255px;
   height: 255px;
@@ -425,8 +421,7 @@ body, html {
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-
-/* line 346, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 366, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .desc {
   font-size: 0.9em;
   color: #222222;
@@ -434,16 +429,14 @@ body, html {
   text-align: justify;
   line-height: 1.3;
 }
-
-/* line 354, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 374, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .date {
   line-height: 1;
   margin-top: 20px;
   font-size: 0.8em;
   color: #bababa;
 }
-
-/* line 361, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 381, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper a.post-read {
   font-family: 'Oswald';
   background: #5ebbf3;
@@ -459,13 +452,11 @@ body, html {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-
-/* line 376, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 396, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper a.post-read:hover {
   background: #2fa7ef;
 }
-
-/* line 386, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 406, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.homepage .post-list-item:after {
   content: "";
   position: absolute;
@@ -480,36 +471,32 @@ body, html {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #9bd0f0 0%, rgba(155, 208, 240, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', endColorstr='#009bd0f0',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9bd0f0', endColorstr='#009bd0f0',GradientType=0 );
   /* IE6-9 */
 }
-
-/* line 404, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 424, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.homepage .post-list-item:nth-child(3):after {
   display: none;
 }
-
-/* line 411, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 431, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.grid-3x > .list-wrapper > article {
   flex-basis: calc(100%/3);
 }
-
-/* line 416, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 436, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.grid-2x > .list-wrapper > article {
   flex-basis: calc(100%/3);
 }
-
-/* line 421, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 441, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.grid-4x > .list-wrapper > article {
   flex-basis: calc(100%/4);
 }
 
-/* line 427, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 447, sass/alfamarine.scss */
 .post-content h1 {
   margin: 5px 0;
 }
 
-/* line 432, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 452, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder > .vehicle-list-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,30 +504,25 @@ body, html {
   flex-wrap: wrap;
   margin: 25px -5px;
 }
-
-/* line 441, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 461, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item {
   flex-basis: calc(100%/4);
   margin-bottom: 15px;
 }
-
-/* line 445, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 465, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .item-wrapper {
   padding: 5px;
 }
-
-/* line 449, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 469, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .title {
   background: #5174c4;
 }
-
-/* line 451, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 471, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .title h3 {
   line-height: 1.2;
   margin: 0;
 }
-
-/* line 455, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 475, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .title a {
   color: white;
   text-align: center;
@@ -549,16 +531,14 @@ body, html {
   font-size: 0.9em;
   padding: 10px;
 }
-
-/* line 465, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 485, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .img {
   max-height: 200px;
   height: 200px;
   overflow: hidden;
   position: relative;
 }
-
-/* line 471, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 491, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .img img {
   position: absolute;
   max-height: 105%;
@@ -569,8 +549,7 @@ body, html {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* line 483, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 503, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params {
   background: #f1f1f1;
   display: -webkit-box;
@@ -578,8 +557,7 @@ body, html {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* line 490, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 510, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params .param {
   flex-basis: calc(100%/3);
   font-size: 0.65em;
@@ -590,15 +568,13 @@ body, html {
   border: 1px solid #dadada;
   text-align: left;
 }
-
-/* line 500, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 520, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params .param .value {
   color: #444444;
   font-weight: bold;
   padding-left: 5px;
 }
-
-/* line 505, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 525, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params .param:last-child {
   flex-basis: 66.66667%;
   text-align: right;
@@ -606,18 +582,15 @@ body, html {
   background: #3aa0cf;
   font-size: 0.8em;
 }
-
-/* line 512, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 532, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params .param:last-child .value {
   color: white;
 }
-
-/* line 519, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 539, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .button {
   margin-top: -5px;
 }
-
-/* line 521, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 541, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .button a {
   background: #dedede;
   padding: 5px;
@@ -630,42 +603,36 @@ body, html {
   font-size: 0.8em;
   font-family: 'Oswald';
 }
-
-/* line 533, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 553, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .button a:hover {
   color: white;
   background: #223b73;
 }
 
-/* line 545, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 565, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder > .list-wrapper {
   margin: 0 -20px;
 }
-
-/* line 550, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 570, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item {
   float: left;
   width: 50%;
   position: relative;
 }
-
-/* line 554, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 574, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper {
   padding: 20px;
 }
-
-/* line 557, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 577, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title {
   overflow: hidden;
 }
-
-/* line 559, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 579, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title h3 {
   margin: 0 0 5px 0;
   line-height: 1.2;
 }
-
-/* line 562, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 582, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title h3 a {
   text-transform: uppercase;
   line-height: 1;
@@ -673,20 +640,17 @@ body, html {
   font-size: 1.2em;
   letter-spacing: -1px;
 }
-
-/* line 569, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 589, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title h3 a:hover {
   color: #5ebbf3;
 }
-
-/* line 575, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 595, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title h4 {
   color: #8ecff6;
   margin: 5px 0 12px 0;
   font-size: 1.2em;
 }
-
-/* line 582, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 602, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img {
   float: left;
   width: 40%;
@@ -697,8 +661,7 @@ body, html {
   text-align: center;
   margin: 0;
 }
-
-/* line 592, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 612, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img img {
   max-height: initial;
   height: auto;
@@ -711,8 +674,7 @@ body, html {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
-/* line 605, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 625, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .after-image-info {
   background: #f1f1f1;
   padding: 10px;
@@ -720,20 +682,17 @@ body, html {
   color: #2995c6;
   position: relative;
 }
-
-/* line 612, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 632, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .after-image-info .rundate {
   float: left;
   font-size: 1.1em;
 }
-
-/* line 615, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 635, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .after-image-info .rundate i {
   margin: 0 8px 0 5px;
   font-size: 18px;
 }
-
-/* line 620, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 640, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .after-image-info .price {
   position: absolute;
   right: 0;
@@ -747,8 +706,7 @@ body, html {
   font-size: 1.8em;
   font-family: 'Oswald';
 }
-
-/* line 634, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 654, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .desc {
   float: left;
   padding: 0 0 0 10px;
@@ -758,8 +716,7 @@ body, html {
   line-height: 1.5;
   color: #222222;
 }
-
-/* line 643, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 663, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper a.post-read {
   font-family: 'Oswald';
   background: #5ebbf3;
@@ -777,13 +734,11 @@ body, html {
   display: block;
   float: left;
 }
-
-/* line 660, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 680, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper a.post-read:hover {
   background: #2fa7ef;
 }
-
-/* line 665, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 685, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info {
   background: #e8e8e8;
   border: 1px solid #c3c3c3;
@@ -795,38 +750,32 @@ body, html {
   margin-top: 8px;
   color: #5f5f5f;
 }
-
-/* line 676, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 696, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info i {
   margin: 0 6px 0 0;
   float: left;
 }
-
-/* line 681, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 701, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info div {
   float: left;
   position: relative;
   padding: 0 8px;
 }
-
-/* line 686, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 706, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info div strong {
   color: #3c3c3c;
 }
-
-/* line 690, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 710, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info div i {
   line-height: 18px;
   color: #3c3c3c;
   font-size: 14px;
 }
-
-/* line 696, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 716, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info > div:first-child {
   border-right: 1px solid #c3c3c3;
 }
-
-/* line 703, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 723, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item:nth-child(2):after {
   content: "";
   position: absolute;
@@ -841,19 +790,17 @@ body, html {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #9bd0f0 0%, rgba(155, 208, 240, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', endColorstr='#009bd0f0',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9bd0f0', endColorstr='#009bd0f0',GradientType=1 );
   /* IE6-9 */
 }
-
-/* line 721, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 741, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item.item1 .img {
   float: none;
   width: 100%;
   height: 280px;
   max-height: 280px;
 }
-
-/* line 727, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 747, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item.item1 .img img {
   height: auto;
   max-height: initial;
@@ -865,16 +812,14 @@ body, html {
   left: 50%;
   top: 50%;
 }
-
-/* line 739, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 759, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item.item1 .desc {
   width: 100%;
   font-size: 0.95em;
   padding: 10px 0 0 0;
   line-height: 1.5;
 }
-
-/* line 745, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 765, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item.item1:after {
   content: "";
   position: absolute;
@@ -889,17 +834,186 @@ body, html {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #9bd0f0 0%, rgba(155, 208, 240, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', endColorstr='#009bd0f0',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9bd0f0', endColorstr='#009bd0f0',GradientType=0 );
   /* IE6-9 */
+}
+/* line 784, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 788, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item {
+  flex-basis: calc(100%/2);
+  position: relative;
+}
+/* line 791, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper {
+  padding: 20px;
+}
+/* line 794, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title {
+  overflow: hidden;
+}
+/* line 796, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title h3 {
+  margin: 0 0 5px 0;
+  line-height: 1.2;
+}
+/* line 799, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title h3 a {
+  text-transform: uppercase;
+  line-height: 1;
+  color: #223b73;
+  font-size: 1.2em;
+  letter-spacing: -1px;
+}
+/* line 806, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title h3 a:hover {
+  color: #5ebbf3;
+}
+/* line 812, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title h4 {
+  color: #8ecff6;
+  margin: 5px 0 12px 0;
+  font-size: 1.2em;
+}
+/* line 819, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .img {
+  width: 100%;
+  height: 4000px;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+/* line 828, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .img img {
+  max-height: initial;
+  height: auto;
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 841, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info {
+  background: #f1f1f1;
+  padding: 10px;
+  font-size: 0.8em;
+  color: #2995c6;
+  position: relative;
+}
+/* line 848, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info .rundate {
+  float: left;
+  font-size: 1.1em;
+}
+/* line 851, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info .rundate i {
+  margin: 0 8px 0 5px;
+  font-size: 18px;
+}
+/* line 856, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info .price {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  bottom: 0;
+  line-height: 43px;
+  padding: 0 15px;
+  background: #2fa7ef;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8em;
+  font-family: 'Oswald';
+}
+/* line 870, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .desc {
+  padding: 0;
+  width: 100%;
+  font-size: 0.95em;
+  text-align: justify;
+  line-height: 1.5;
+  color: #222222;
+}
+/* line 878, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .desc .desc-wrapper {
+  margin: 10px 0;
+  overflow: hidden;
+  max-height: 100px;
+}
+/* line 884, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper a.post-read {
+  font-family: 'Oswald';
+  background: #5ebbf3;
+  color: white;
+  margin-top: 8px;
+  text-align: center;
+  padding: 8px;
+  line-height: 1;
+  font-size: 0.95em;
+  font-weight: bold;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  display: block;
+  float: left;
+}
+/* line 901, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper a.post-read:hover {
+  background: #2fa7ef;
+}
+/* line 906, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info {
+  background: #e8e8e8;
+  border: 1px solid #c3c3c3;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  padding: 4px 3px;
+  float: right;
+  font-size: 0.80em;
+  margin-top: 8px;
+  color: #5f5f5f;
+}
+/* line 917, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info i {
+  margin: 0 6px 0 0;
+  float: left;
+}
+/* line 922, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info div {
+  float: left;
+  position: relative;
+  padding: 0 8px;
+}
+/* line 927, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info div strong {
+  color: #3c3c3c;
+}
+/* line 931, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info div i {
+  line-height: 18px;
+  color: #3c3c3c;
+  font-size: 14px;
+}
+/* line 937, sass/alfamarine.scss */
+.sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info > div:first-child {
+  border-right: 1px solid #c3c3c3;
 }
 
 /* Footer */
-/* line 765, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 947, sass/alfamarine.scss */
 .fusion-footer {
   position: relative;
 }
-
-/* line 767, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 949, sass/alfamarine.scss */
 .fusion-footer:before {
   content: "";
   position: absolute;
@@ -918,45 +1032,39 @@ body, html {
   pointer-events: none;
 }
 
-/* line 786, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 968, sass/alfamarine.scss */
 footer .custom-footer-logo {
   margin-bottom: 20px;
   margin-top: -35px;
 }
-
-/* line 790, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 972, sass/alfamarine.scss */
 footer .footer-facebook-likebox {
   position: absolute;
   right: 125px;
   bottom: -82px;
 }
-
-/* line 795, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 977, sass/alfamarine.scss */
 footer .am-contact {
   font-size: 1.2em;
   font-family: 'Oswald';
   font-weight: normal;
 }
-
-/* line 800, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 982, sass/alfamarine.scss */
 footer .am-contact i {
   font-size: 22px;
   width: 22px;
   text-align: center;
   margin-right: 10px;
 }
-
-/* line 808, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 990, sass/alfamarine.scss */
 footer a:hover {
   color: #f9d179 !important;
 }
-
-/* line 812, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 994, sass/alfamarine.scss */
 footer .fusion-copyright-notice {
   color: #bae0f3;
 }
-
-/* line 815, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 997, sass/alfamarine.scss */
 footer .sailboat-draw {
   pointer-events: none;
   position: absolute;
@@ -965,8 +1073,7 @@ footer .sailboat-draw {
   height: 240px;
   animation: sailboat 20s infinite;
 }
-
-/* line 823, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+/* line 1005, sass/alfamarine.scss */
 footer .sailboat-draw img {
   max-height: 100%;
 }
@@ -974,46 +1081,57 @@ footer .sailboat-draw img {
 /* END Footer */
 /* KEYFRAMES */
 @webkit-keyframes sailboat {
-  /* line 833, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+  /* line 1015, sass/alfamarine.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
-  /* line 834, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+
+  /* line 1016, sass/alfamarine.scss */
   25% {
     -webkit-transform: rotate(-10deg);
   }
-  /* line 835, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+
+  /* line 1017, sass/alfamarine.scss */
   50% {
     -webkit-transform: rotate(0deg);
   }
-  /* line 836, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+
+  /* line 1018, sass/alfamarine.scss */
   75% {
     -webkit-transform: rotate(10deg);
   }
-  /* line 837, /Users/MolnarIstvan/Documents/Munka/AlfaMarine/vi-am/wp-content/themes/AlfaMarine/assets/css/sass/alfamarine.scss */
+
+  /* line 1019, sass/alfamarine.scss */
   100% {
     -webkit-transform: rotate(0deg);
   }
 }
 
 @keyframes sailboat {
+  /* line 1022, sass/alfamarine.scss */
   0% {
     transform: rotate(0deg);
   }
+
+  /* line 1023, sass/alfamarine.scss */
   25% {
     transform: rotate(-10deg);
   }
+
+  /* line 1024, sass/alfamarine.scss */
   50% {
     transform: rotate(0deg);
   }
+
+  /* line 1025, sass/alfamarine.scss */
   75% {
     transform: rotate(10deg);
   }
+
+  /* line 1026, sass/alfamarine.scss */
   100% {
     transform: rotate(0deg);
   }
 }
 
 /* END KEYFRAMES */
-
-/*# sourceMappingURL=../alfamarine.map */

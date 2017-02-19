@@ -78,7 +78,13 @@ class VehiclesSC
 
       $t = new ShortcodeTemplates(__CLASS__.'/'.__FUNCTION__.( ($this->template ) ? '-'.$this->template:'' ));
       //print_r($arg);
-      $o = '<div class="sc-'.strtolower(__CLASS__).'-'.strtolower(__FUNCTION__).'-holder style-'.$this->template.'">';
+      $o = '<div class="post-content sc-'.strtolower(__CLASS__).'-'.strtolower(__FUNCTION__).'-holder style-'.$this->template.'">';
+
+      if ($this->params['control'] == 1) {
+          $o .= '<div class="sc-header">';
+          $o .= '<h1 class="heading">'.__('Hajóink', TD).'</h1>';
+          $o .= '</div>';
+      }
 
       $paged = (get_query_var('page')) ? get_query_var('page') : 0;
       $pages = new WP_Query(array(

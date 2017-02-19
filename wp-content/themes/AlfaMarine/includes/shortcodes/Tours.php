@@ -4,6 +4,8 @@ class ToursSC
     const SCTAG = 'tours';
     private $template = 'default';
     private $attr = array();
+    public $pagionation = null;
+    public $max_num_pages = 1;
 
     public function __construct()
     {
@@ -26,7 +28,9 @@ class ToursSC
               'limit' => 30,
               'src'   => 'db',
               'orderby' => 'date',
-              'order' => 'DESC'
+              'order' => 'DESC',
+              'control' => 1,
+              'autocat' => 0
             )
         );
         /* Parse the arguments. */
@@ -44,45 +48,95 @@ class ToursSC
           break;
         }
 
+        if ($this->attr['control'] == 1) {
+            $output .= '<div class="pagination">'.$this->pagionation.'</div>';
+        }
+
         /* Return the output of the tooltip. */
         return apply_filters( self::SCTAG, $output );
     }
 
     private function src_db()
     {
-      $o = '<div class="sc-'.strtolower(__CLASS__).'-'.strtolower(__FUNCTION__).'-holder style-'.$this->template.'"><div class="list-wrapper">';
+      $o = '<div class="post-content sc-'.strtolower(__CLASS__).'-'.strtolower(__FUNCTION__).'-holder style-'.$this->template.'">';
 
       $data = array();
       $parent = false;
 
-      // View
-      $t = new ShortcodeTemplates(__CLASS__.'/'.__FUNCTION__.( ($this->template ) ? '-'.$this->template:'' ));
-
-      $pages = get_posts(array(
+      $paged = (get_query_var('page')) ? get_query_var('page') : 0;
+      $qryparam = array(
         'post_type' => 'tours',
         'orderby' => $this->attr['orderby'],
         'order' => $this->attr['order'],
-        'post_per_page' => $this->attr['limit']
-      ));
+        'posts_per_page' => $this->attr['limit'],
+        'paged' => $paged
+      );
 
-      if ($pages)
+      // Tax query
+      if($this->attr['autocat'] == 1) {
+        $termobj = get_queried_object();
+        if($termobj) {
+          $qryparam['tax_query'] = array(
+            array(
+              'taxonomy' => 'tour_category',
+              'field' => 'ID',
+              'terms' => $termobj->term_id
+            )
+          );
+        }
+      }
+
+      if ($this->attr['control'] == 1) {
+          $o .= '<div class="sc-header">';
+          $o .= '<h1 class="heading">'.sprintf(__('Válasszon <strong>%s</strong> közül', TD), $termobj->name).'</h1>';
+          $o .= '</div>';
+      }
+
+      // View
+      $t = new ShortcodeTemplates(__CLASS__.'/'.__FUNCTION__.( ($this->template ) ? '-'.$this->template:'' ));
+
+
+      $pages = new WP_Query($qryparam);
+
+      if ($pages->have_posts())
       {
-        foreach ($pages as $page) {
-          $i++;
+        $o .= '<div class="list-wrapper">';
+        $this->max_num_pages = ceil( $pages->found_posts / $this->attr['limit']);
 
-          $tour = new Tour($page->ID);
+        while ( $pages->have_posts() )
+        {
+          $pages->the_post();
+          $i++;
+          $tour = new Tour(get_the_ID());
           $data['i'] = $i;
           $data['post'] = $tour;
 
           $o .= $t->load_template($data);
         }
-      } else {
 
+        $this->pagionation = paginate_links( array(
+          'base' => $_SERVER['REQUEST_URI'].'%_%',
+          'format' => '?page=%#%',
+          'current' => max( 1, get_query_var('page') ),
+          'total' => $this->max_num_pages
+        ) );
+        wp_reset_postdata();
+        $o .= '</div>';
+      } else {
+        ob_start();
+        include(locate_template('templates/parts/tours-nodata-'.$this->template.'.php'));
+        $o .= ob_get_contents();
+        ob_end_clean();
       }
 
-      $o .= '</div></div>';
+      $o .= '</div>';
 
       return $o;
+    }
+
+    public function pagination()
+    {
+      echo $this->pagination;
     }
 
 }
