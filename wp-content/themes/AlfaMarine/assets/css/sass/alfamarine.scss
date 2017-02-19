@@ -70,6 +70,58 @@ body, html {
 .fusion-breadcrumb-sep{
   color: #cacaca;
 }
+.fusion-megamenu-title a{
+  text-transform: uppercase;
+  font-size: 0.9em;
+  text-align: center;
+}
+.fusion-megamenu{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2efef+0,fffcfc+100 */
+background: rgb(242,239,239); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(242,239,239,1) 0%, rgba(255,252,252,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(242,239,239,1) 0%,rgba(255,252,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(242,239,239,1) 0%,rgba(255,252,252,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2efef', endColorstr='#fffcfc',GradientType=0 ); /* IE6-9 */
+}
+.fusion-main-menu .sub-menu{
+  left: 50%;
+  border: 5px solid darken($color-pr, 10%) !important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2efef+0,fffcfc+100 */
+background: rgb(242,239,239); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(242,239,239,1) 0%, rgba(255,252,252,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(242,239,239,1) 0%,rgba(255,252,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(242,239,239,1) 0%,rgba(255,252,252,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2efef', endColorstr='#fffcfc',GradientType=0 ); /* IE6-9 */
+  -webkit-box-shadow: 0 5px 20px -5px #000000;
+  -moz-box-shadow: 0 5px 20px -5px #000000;
+  box-shadow: 0 5px 20px -5px #000000;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+   a {
+     text-align: center;
+     padding: 15px !important;
+
+     &:hover {
+       color: white;
+     }
+   }
+
+   &:before {
+     content:"";
+     position: absolute;
+     border-width: 20px;
+     border-style: solid;
+     pointer-events: none;
+     border-color: transparent transparent darken($color-pr, 10%) transparent;
+     left: 50%;
+     top: -40px;
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     transform: translateX(-50%);
+   }
+}
 /* END Avada Menü fix */
 
 .fusion-separator.sep-shadow:after{
@@ -88,7 +140,66 @@ body, html {
 .button-pill{
   border-radius: 50px;
 }
+.pagination {
+  text-align: center;
+  margin: 15px auto;
+  float: none;
 
+  a.page-numbers{
+    color: #616161;
+    margin: 0 5px;
+    font-size: 0.9em;
+  }
+
+  .page-numbers.prev,
+  .page-numbers.next {
+    color: #444444;
+  }
+
+  a.page-numbers{
+    background: #e2e2e2;
+    display: inline-block;
+    text-align: center;
+    margin: 0 4px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+
+    &:hover {
+      background: $color-pr-dark;
+      color: white;
+    }
+  }
+  a.page-numbers.prev,
+  a.page-numbers.next {
+    width: auto;
+    padding: 0 10px;
+    color: #8c8c8c;
+
+    &:hover {
+      color: white;
+    }
+  }
+  .page-numbers.current{
+    background: $color-pr-dark;
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 30px;
+    margin: 0 4px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+}
 .fusion-footer footer.fusion-footer-widget-area{
   background-image: url('../../images/footer-bg-bottom-v1.svg');
   background-position: bottom center;
@@ -329,6 +440,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
   &.style-standard{
     .vehicle-list-item{
       flex-basis: calc(100%/4);
+      margin-bottom: 15px;
 
       .item-wrapper{
         padding: 5px;

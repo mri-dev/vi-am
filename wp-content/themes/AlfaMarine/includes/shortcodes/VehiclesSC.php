@@ -8,6 +8,7 @@ class VehiclesSC
     public $template = 'standard';
     public $type;
     public $pagionation = null;
+    public $max_num_pages = 1;
 
     public function __construct()
     {
@@ -79,24 +80,36 @@ class VehiclesSC
       //print_r($arg);
       $o = '<div class="sc-'.strtolower(__CLASS__).'-'.strtolower(__FUNCTION__).'-holder style-'.$this->template.'">';
 
-      $pages = get_posts(array(
+      $paged = (get_query_var('page')) ? get_query_var('page') : 0;
+      $pages = new WP_Query(array(
         'post_type' => 'boats',
         'orderby' => $this->params['orderby'],
         'order' => $this->params['order'],
-        'post_per_page' => $this->params['limit']
+        'posts_per_page' => $this->params['limit'],
+        'paged' => $paged
       ));
-
-      if ( count($pages) != 0 ) {
+      $this->max_num_pages = ceil( $pages->found_posts / $this->params['limit']);
+      if ( $pages->have_posts() ) {
         $o .= '<div class="vehicle-list-wrapper">';
-        foreach ( $pages as $e )
+        while ( $pages->have_posts() )
         {
+          $pages->the_post();
           $i++;
-          $boat = new Boat($e->ID);
+          $boat = new Boat(get_the_ID());
           $data['i'] = $i;
           $data['post'] = $boat;
 
           $o .= $t->load_template( $data );
         }
+
+        $this->pagionation = paginate_links( array(
+        	'base' => '%_%',
+        	'format' => '?page=%#%',
+        	'current' => max( 1, get_query_var('page') ),
+        	'total' => $this->max_num_pages
+        ) );
+
+        wp_reset_postdata();
         $o .= '</div>';
       } else {
         ob_start();
@@ -108,6 +121,11 @@ class VehiclesSC
       $o .= '</div>';
 
       return $o;
+    }
+
+    public function pagination()
+    {
+      echo $this->pagination;
     }
 
     private function no_src()

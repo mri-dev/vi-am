@@ -88,7 +88,7 @@
     ) );
 
     $tours->add_taxonomy( 'tour_category', array(
-      'rewrite' => 'category',
+      'rewrite' => 'tours-c',
       'name' => array('Kategória', 'Kategóriák'),
       'labels' => array(
         'menu_name' => '%s',
