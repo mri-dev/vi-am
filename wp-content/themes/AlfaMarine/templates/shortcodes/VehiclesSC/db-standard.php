@@ -7,10 +7,10 @@
         <a href="<?php echo get_permalink($post->ID()); ?>"><img src="<?php echo $post->Image(); ?>" alt="<?php echo $post->Title(); ?>"></a>
       </div>
     <div class="params">
-      <?php foreach($post->getParams() as $paramkey => $param): ?>
+      <?php foreach($post->getParams() as $paramkey => $param): if(!$param['in_list']) continue; ?>
         <div class="param param-<?php echo $paramkey; ?>">
           <span class="text">
-            <?php echo $param['label']; ?>
+            <?php echo $param['list_label']; ?>
           </span>
           <span class="value">
             <?php echo $param['value']; ?>

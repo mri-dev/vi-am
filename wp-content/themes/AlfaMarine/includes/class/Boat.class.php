@@ -1,17 +1,18 @@
 <?php
-  class Boat
+  class Boat extends AppFactory
   {
     private $id = false;
     private $data = array();
 
     public function __construct( $id = false )
     {
+      parent::__construct();
       $this->id = $id;
       $this->load();
       return $this;
     }
 
-    public function Title()
+      public function Title()
     {
       return $this->data->post_title;
     }
@@ -25,13 +26,36 @@
       return $img;
     }
 
+    public function Description()
+    {
+      $content = apply_filters('the_content', $this->data->post_content);
+
+      if(empty($content)) return false;
+
+      return $content;
+    }
+
+    public function Gallery()
+    {
+      $content = get_post_meta($this->ID(), parent::APP_PREFIX.'galeria_code', true);
+
+      if(empty($content)) return false;
+
+      return $content;
+    }
+
     public function getParams()
     {
       $params = array();
-      for ($i=0; $i < 5 ; $i++) {
-        $params['param'.$i] = array(
-          'label' => 'param'.$i,
-          'value' => 'value'.$i
+
+      if($this->boats_metakeys)
+      foreach ($this->boats_metakeys as $key => $value) {
+        if( !$value['param'] ) continue;
+        $params[$key] = array(
+          'label' => $value['label'],
+          'value' => $this->getMeta($key, '--'),
+          'in_list' => (boolean)$value['in_list'],
+          'list_label' => $value['list_label'],
         );
       }
 
@@ -56,6 +80,31 @@
     private function load()
     {
       $this->data = get_post($this->id);
+    }
+
+    public function getMeta($key, $nometavalue = false)
+    {
+      $meta = get_post_meta($this->ID(), $key, true);
+
+      if ( !$meta && $nometavalue ) {
+        $meta = $nometavalue;
+      }
+
+      if ( !$meta && !$nometavalue ) {
+        $meta = false;
+      }
+
+      $meta_info = $this->boats_metakeys[$key];
+
+      if ($meta_info['value_before']) {
+       $meta = $meta_info['value_before'].' '.$meta;
+      }
+
+      if ($meta_info['value_before']) {
+       $meta = $meta.' '.$meta_info['value_before'];
+      }
+
+      return $meta;
     }
   } 
 ?>

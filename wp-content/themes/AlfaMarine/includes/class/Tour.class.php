@@ -39,9 +39,9 @@
       return date(get_option('date_format', ''));
     }
 
-    public function DeadlineDate()
+    public function SeasonDate()
     {
-      return date(get_option('date_format', ''));
+      return date(get_option('date_format', '')) . ' &mdash; '.date(get_option('date_format', ''));
     }
 
     public function ID()

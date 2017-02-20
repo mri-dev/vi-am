@@ -30,7 +30,8 @@ class VehiclesSC
               'limit' => 16,
               'orderby' => 'menu_order',
               'order' => 'ASC',
-              'control' => 1
+              'control' => 1,
+              'excid' => ''
             )
         );
 
@@ -86,13 +87,16 @@ class VehiclesSC
           $o .= '</div>';
       }
 
+      $excid = (empty($this->params['excid'])) ? array() : explode(",", $this->params['excid']);
+
       $paged = (get_query_var('page')) ? get_query_var('page') : 0;
       $pages = new WP_Query(array(
         'post_type' => 'boats',
         'orderby' => $this->params['orderby'],
         'order' => $this->params['order'],
         'posts_per_page' => $this->params['limit'],
-        'paged' => $paged
+        'paged' => $paged,
+        'post__not_in' => $excid
       ));
       $this->max_num_pages = ceil( $pages->found_posts / $this->params['limit']);
       if ( $pages->have_posts() ) {

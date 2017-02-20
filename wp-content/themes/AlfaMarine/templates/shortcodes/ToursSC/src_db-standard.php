@@ -13,7 +13,7 @@
     <?php if (true): ?>
       <div class="after-image-info">
         <div class="rundate">
-          <i class="fa fa-calendar"></i> <?php echo __('Jelentkezési határidő', TD); ?>: <strong><?php echo $post->DeadlineDate(); ?></strong>
+          <i class="fa fa-calendar"></i> <?php echo __('Szezon', TD); ?>: <strong><?php echo $post->SeasonDate(); ?></strong>
         </div>
         <div class="price">
           <?php echo $post->Price(); ?>
@@ -24,12 +24,12 @@
     <div class="desc">
       <div class="desc-wrapper">
         <?php echo $post->Excerpt(); ?>
-      </div>      
+      </div>
       <div class="clearfix"></div>
       <?php if (true): ?>
         <div class="more-info">
           <div><i class="fa fa-user-circle-o"></i> <?php echo sprintf(__('Maximum <strong>%d</strong> fő', TD), $post->MaxFo()); ?></div>
-          <div><i class="fa fa-calendar"></i> <?php echo __('Túra ideje', TD).': <strong>'.$post->RunDate(); ?></strong></div>
+
         </div>
       <?php endif; ?>
       <a class="post-read" href="<?php echo get_permalink($post->ID()); ?>"><?php echo __( 'Túra részletei' ,TD) ?></a>

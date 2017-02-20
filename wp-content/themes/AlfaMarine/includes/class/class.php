@@ -1,4 +1,5 @@
 <?php
+  require_once "AppFactory.class.php";
   require_once "PostTypeFactory.class.php";
   require_once "Helper.class.php";
   require_once "ShortcodeTemplates.php";
