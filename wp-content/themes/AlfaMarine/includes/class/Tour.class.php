@@ -1,11 +1,12 @@
 <?php
-  class Tour
+  class Tour extends AppFactory
   {
     private $id = false;
     private $data = array();
 
     public function __construct( $id = false )
     {
+      parent::__construct();
       $this->id = $id;
       $this->load();
       return $this;
@@ -32,7 +33,7 @@
 
     public function Price()
     {
-      return '26 990 Ft';
+      return get_post_meta($this->ID(), self::APP_PREFIX.'ar', true);
     }
     public function RunDate()
     {

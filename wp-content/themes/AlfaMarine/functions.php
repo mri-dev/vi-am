@@ -30,10 +30,14 @@
   * Konfig beállítások
   *
   **/
+  $app = null;
   function app_init_settings()
   {
+    global $app;
     add_post_type_support( 'post', 'excerpt' );
     create_custom_posttypes();
+
+    $app = new AppFactory();
   }
   add_action( 'init', 'app_init_settings' );
 
@@ -72,6 +76,13 @@
       )
     ) );
 
+    $boats_metabox = new CustomMetabox(
+      'boats',
+      __('Hajó beállítások', TD),
+      new BoatsMetaboxSave(),
+      'boats'
+    );
+
   	$boats->create();
     add_post_type_support( 'boats', 'excerpt' );
 
@@ -108,6 +119,13 @@
   			'all_items' => '%s',
   		)
   	) );
+
+    $tours_metabox = new CustomMetabox(
+      'tours',
+      __('Túra beállítások', TD),
+      new ToursMetaboxSave(),
+      'tours'
+    );
 
     $tours->create();
     add_post_type_support( 'tours', 'excerpt' );

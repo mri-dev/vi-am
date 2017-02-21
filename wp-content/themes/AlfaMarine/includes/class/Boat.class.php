@@ -87,21 +87,19 @@
       $meta = get_post_meta($this->ID(), $key, true);
 
       if ( !$meta && $nometavalue ) {
-        $meta = $nometavalue;
-      }
-
-      if ( !$meta && !$nometavalue ) {
-        $meta = false;
+        return $nometavalue;
+      } else if( !$meta ) {
+        return false;
       }
 
       $meta_info = $this->boats_metakeys[$key];
-
+      
       if ($meta_info['value_before']) {
        $meta = $meta_info['value_before'].' '.$meta;
       }
 
-      if ($meta_info['value_before']) {
-       $meta = $meta.' '.$meta_info['value_before'];
+      if ($meta_info['value_after']) {
+       $meta = $meta.' '.$meta_info['value_after'];
       }
 
       return $meta;
