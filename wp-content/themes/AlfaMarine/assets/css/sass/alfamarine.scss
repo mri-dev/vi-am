@@ -1181,6 +1181,29 @@ body.single-tours{
     }
     margin-bottom: 20px;
   }
+
+  .nav-links{
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      a {
+        padding: 0 10px;
+        margin: 4px 0;
+        display: block;
+        color: $color-sec;
+        text-transform: uppercase;
+        font-family: 'Oswald';
+        border-left: 5px solid $color-sec;
+
+        &:hover {
+          color: $color-pr-dark;
+          border-left: 5px solid $color-pr-dark;
+        }
+      }
+    }
+  }
 }
 
 .boat-page{
@@ -1265,6 +1288,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bde3fa', e
   }
 }
 
+.fusion-button.button-blue{
+  background: $color-sec;
+  color: white;
+
+  &:hover {
+    background: $color-pr-dark;
+    color: white;
+  }
+}
 /* Footer */
 .fusion-footer{
   position: relative;
