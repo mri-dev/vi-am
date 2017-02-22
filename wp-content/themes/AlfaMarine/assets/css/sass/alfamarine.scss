@@ -467,7 +467,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
       }
 
       .title {
-        background: desaturate(lighten($color-sec, 25%), 5);
+        background: desaturate(lighten($color-sec, 0), 5);
         h3{
           line-height: 1.2;
           margin: 0;
@@ -526,7 +526,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
             flex-basis: 100% - (100%/3);
             text-align: right;
             color: white;
-            background: desaturate(lighten($color-pr-dark, 5%), 5);
+            background: #75abd4;
             font-size: 0.8em;
 
             .value {
@@ -559,7 +559,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
     }
   }
 }
-
+.rev_slider_wrapper .shadow-left{
+  display: none !important;
+}
+.rev_slider_wrapper .shadow-right{
+  background-image: url('../../images/slide-overlay-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 100px;
+  margin-bottom: -2px;
+}
+.avada-skin-rev{
+  border: none !important;
+}
 .sc-tourssc-src_db-holder
 {
   & > .list-wrapper {
@@ -583,7 +596,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
               text-transform: uppercase;
               line-height: 1;
               color: $color-sec;
-              font-size: 1.2em;
+              font-size: 1.4em;
               letter-spacing: -1px;
 
               &:hover {
@@ -596,6 +609,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
             color: darken($color-pr, 10%);
             margin: 5px 0 12px 0;
             font-size: 1.2em;
+            line-height: 1;
+            font-weight: normal;
+            font-family: 'Oswald';
           }
         }
 
@@ -620,6 +636,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+          }
+
+          .flags {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            pointer-events: none;
+            .flag {
+              background: #555555;
+              color: white;
+              text-transform: uppercase;
+              font-size: 0.75em;
+              margin: 8px 0;
+              padding: 4px 8px;
+
+              -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+              -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+              box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+
+              &.flag-highlight{
+                background: #c92e36;
+              }
+
+              &.flag-exclusive{
+                color: #f5c65e;
+                background: #222222;
+              }
+            }
           }
         }
         .after-image-info{
@@ -813,6 +858,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
             color: darken($color-pr, 10%);
             margin: 5px 0 12px 0;
             font-size: 1.2em;
+            line-height: 1;
+            font-weight: normal;
+            font-family: 'Oswald';
           }
         }
 
@@ -974,6 +1022,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
             color: darken($color-pr, 10%);
             margin: 5px 0 12px 0;
             font-size: 0.9em;
+            line-height: 1;
+            font-weight: normal;
+            font-family: 'Oswald';
           }
         }
 
@@ -1104,6 +1155,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
         }
       }
     }
+  }
+
+  h4 {
+    a:hover {
+      color: darken($color-pr-dark, 15%) !important;
+    }
+  }
+}
+
+body.single-tours{
+  #main {
+    padding-top: 0 !important;
+  }
+}
+
+.tour-page{
+  .header {
+    h1 {
+      text-align: center;
+      font-family: 'Oswald';
+      font-size: 3.4em;
+      color: $color-sec;
+      margin: 10px 0 5px 0;
+    }
+    margin-bottom: 20px;
   }
 }
 

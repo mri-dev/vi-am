@@ -2,7 +2,7 @@
   <div class="item-wrapper">
     <div class="title">
       <h3><a href="<?php echo get_permalink($post->ID()); ?>"><?php echo $post->Title(); ?></a></h3>
-      <h4>A túra alcíme</h4>
+      <h4><?php echo $post->CatTree(); ?></h4>
     </div>
     <div class="img">
       <?php

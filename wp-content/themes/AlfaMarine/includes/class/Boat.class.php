@@ -93,7 +93,7 @@
       }
 
       $meta_info = $this->boats_metakeys[$key];
-      
+
       if ($meta_info['value_before']) {
        $meta = $meta_info['value_before'].' '.$meta;
       }

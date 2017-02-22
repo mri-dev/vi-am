@@ -1,6 +1,9 @@
 <?php
   class Tour extends AppFactory
   {
+    const GROUP_KEY_HIGHLIGHTED = 'kiemelt';
+    const GROUP_KEY_EXCLUSIVE = 'exkluziv';
+
     private $id = false;
     private $data = array();
 
@@ -26,6 +29,66 @@
       return $img;
     }
 
+    public function CatTree( $raw = false )
+    {
+      $terms = wp_get_post_terms($this->ID(), 'tour_category');
+      $term_exp = '';
+
+      if ($terms) {
+
+        if($raw) return $terms;
+
+        foreach ($terms as $t) {
+          $term_exp .= '<a href="'.get_term_link($t->term_id).'">'.$t->name.'</a>, ';
+        }
+
+        $term_exp = rtrim($term_exp, ', ');
+
+      } else return false;
+
+      return $term_exp;
+    }
+
+    public function Groups()
+    {
+      $terms = wp_get_post_terms($this->ID(), 'tour_groups');
+      $data = array();
+
+      if ($terms) {
+        foreach ($terms as $t) {
+          $data['list_slug'][] = $t->slug;
+          $data['list_id'][] = $t->term_id;
+          $data['raw'][$t->term_id] = $t;
+        }
+      } else return false;
+
+      return $data;
+    }
+
+    public function isHighlighted()
+    {
+      $g = $this->Groups();
+
+      if( in_array(self::GROUP_KEY_HIGHLIGHTED, (array)$g['list_slug']) )
+      {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    public function isExclusive()
+    {
+      $g = $this->Groups();
+
+      if( in_array(self::GROUP_KEY_EXCLUSIVE, (array)$g['list_slug']) )
+      {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
     public function MaxFo()
     {
       return (int)8;
@@ -33,7 +96,11 @@
 
     public function Price()
     {
-      return get_post_meta($this->ID(), self::APP_PREFIX.'ar', true);
+      $price = get_post_meta($this->ID(), self::APP_PREFIX.'ar', true);
+
+      if(empty($price)) return false;
+
+      return $price;
     }
     public function RunDate()
     {
@@ -53,6 +120,11 @@
     public function Excerpt()
     {
       return get_the_excerpt($this->ID());
+    }
+
+    public function Content()
+    {
+      return apply_filters('the_content', $this->data->post_content);
     }
 
     private function load()

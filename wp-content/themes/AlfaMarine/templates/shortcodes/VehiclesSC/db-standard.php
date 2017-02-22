@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="button">
-    <a href="<?php echo get_permalink($post->ID()); ?>"><?php echo __('Hajó adatlap', TD); ?> <i class="fa fa-arrow-circle-right"></i></a>
+    <a href="<?php echo get_permalink($post->ID()); ?>"><?php echo __('Bővebben', TD); ?> <i class="fa fa-arrow-circle-right"></i></a>
   </div>
   <div class="clearfix"></div>
 </article>

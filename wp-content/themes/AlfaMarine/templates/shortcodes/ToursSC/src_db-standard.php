@@ -2,7 +2,7 @@
   <div class="item-wrapper">
     <div class="title">
       <h3><a href="<?php echo get_permalink($post->ID()); ?>"><?php echo $post->Title(); ?></a></h3>
-      <h4>A túra alcíme</h4>
+      <h4><?php echo $post->CatTree(); ?></h4>
     </div>
     <div class="img">
       <?php
@@ -12,12 +12,14 @@
     </div>
     <?php if (true): ?>
       <div class="after-image-info">
-        <div class="rundate">
-          <i class="fa fa-calendar"></i> <?php echo __('Szezon', TD); ?>: <strong><?php echo $post->SeasonDate(); ?></strong>
+        <div class="rundate" title='<?php echo __('Szezon ideje', TD); ?>'>
+          <i class="fa fa-calendar"></i> <strong><?php echo $post->SeasonDate(); ?></strong>
         </div>
+        <?php $price = $post->Price(); if($price): ?>
         <div class="price">
-          <?php echo $post->Price(); ?>
+          <?php echo $price; ?>
         </div>
+        <?php endif; ?>
         <div class="clearfix"></div>
       </div>
     <?php endif; ?>
