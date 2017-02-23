@@ -51,7 +51,7 @@ class AppFactory
         'list_label' => __('Hossz', TD),
         'param' => true,
       ),
-      self::APP_PREFIX.'hossza' => array(
+      self::APP_PREFIX.'szelesseg' => array(
         'label' => __('Szélesség', TD),
         'value_before' => false,
         'value_after' => ' m',
@@ -111,6 +111,14 @@ class AppFactory
         'in_list' => true,
         'list_label' => __('Ár', TD),
         'param' => true,
+      ),
+      self::APP_PREFIX.'galleria_sc' => array(
+        'label' => __('Galéria shortcode', TD),
+        'value_before' => false,
+        'value_after' => false,
+        'in_list' => true,
+        'list_label' => __('Galéria shortcode', TD),
+        'param' => false,
       ),
     );
   }

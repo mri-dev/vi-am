@@ -37,7 +37,7 @@
 
     public function Gallery()
     {
-      $content = get_post_meta($this->ID(), parent::APP_PREFIX.'galeria_code', true);
+      $content = get_post_meta($this->ID(), parent::APP_PREFIX.'galleria_sc', true);
 
       if(empty($content)) return false;
 

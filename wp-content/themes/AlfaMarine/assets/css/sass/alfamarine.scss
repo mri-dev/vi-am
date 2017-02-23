@@ -72,8 +72,18 @@ body, html {
 }
 .fusion-megamenu-title a{
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 1.1em;
   text-align: center;
+  font-family:'Oswald';
+  position: relative;
+
+  &:after {
+    content: "\f08e";
+    font-family: 'FontAwesome';
+    font-size: 18px;
+    line-height: 32px;
+    margin-left: 5px;
+  }
 }
 .fusion-megamenu{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2efef+0,fffcfc+100 */
@@ -121,6 +131,96 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2efef', end
      -moz-transform: translateX(-50%);
      transform: translateX(-50%);
    }
+}
+
+.fusion-megamenu-wrapper .fusion-megamenu-submenu .sub-menu{
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  border: none !important;
+  background: none;
+
+  &:before {
+    display: none;
+  }
+
+
+  a {
+    background: none;
+    border: none;
+    height: auto;
+    max-height: initial;
+    color: $color-pr-dark;
+    line-height: 26px;
+    text-align: left;
+    padding: 0 15px 4px 25px !important;
+
+    .fusion-megamenu-bullet {
+      color: white;
+      margin-top: 1px;
+      border: none;
+      width: 22px;
+      height: 22px;
+      position: relative;
+
+      &:after {
+        content: "\f18e";
+        font-family: 'FontAwesome';
+        position: absolute;
+        left: 0;
+        color: $color-pr-dark;
+        line-height: 24px;
+        padding: 0 0 0 1px;
+        margin: 0;
+        top: 0;
+        width: 24px;
+        font-size: 24px;
+        height: 24px;
+        text-align: center;
+      }
+    }
+
+    &:hover {
+      background: none !important;
+      color: $color-sec !important;
+
+      .fusion-megamenu-bullet {
+
+        &:after {
+          color: $color-sec;
+        }
+      }
+    }
+  }
+}
+
+.fusion-megamenu-icon{
+  display: block;
+  width: 100%;
+  position: relative;
+  max-height: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin: 0 0 12px 0;
+
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-height: initial;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+.fusion-megamenu-title{
+  padding: 15px;
+}
+.fusion-megamenu-wrapper .fusion-megamenu-submenu{
+  padding: 0px 0px 15px 0;
 }
 /* END Avada Menü fix */
 
@@ -1242,7 +1342,7 @@ body.single-tours{
           &:after {
             position: absolute;
             content: "";
-            height: 2px;
+            height: 1px;
             width: 100%;
             bottom: 0;
             left: 0;
@@ -1274,6 +1374,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bde3fa', e
     border-right: none;
     padding: 10px 0;
     margin: 20px 0;
+
+    h1 {
+      color: #515151;
+      margin: 5px 0 25px 0;
+      font-family: 'Oswald';
+    }
+
+    h2 {
+      font-size: 1.6em;
+    }
   }
   .related-list{
     margin: 0 0 20px 0;

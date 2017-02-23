@@ -31,6 +31,12 @@
       </div>
     </div>
 
+    <?php if ( ($desc = $boat->Description()) ): ?>
+    <div class="boat-description">
+        <?php echo $desc; ?>
+    </div>
+    <?php endif; ?>
+
     <?php if ( ($gallery = $boat->Gallery()) ): ?>
       <a name="gallery"></a>
       <div class="related-list gallery">
@@ -39,12 +45,7 @@
         <?php echo do_shortcode($gallery); ?>
       </div>
     <?php endif; ?>
-    
-    <?php if ( ($desc = $boat->Description()) ): ?>
-    <div class="boat-description">
-        <?php echo $desc; ?>
-    </div>
-    <?php endif; ?>
+
     <a name="tours"></a>
     <div class="related-list">
       <h2><?php echo __('Túrák a hajóval', TD); ?></h2>

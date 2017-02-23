@@ -96,11 +96,21 @@ body, html {
 /* line 73, sass/alfamarine.scss */
 .fusion-megamenu-title a {
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 1.1em;
   text-align: center;
+  font-family: 'Oswald';
+  position: relative;
+}
+/* line 80, sass/alfamarine.scss */
+.fusion-megamenu-title a:after {
+  content: "\f08e";
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  line-height: 32px;
+  margin-left: 5px;
 }
 
-/* line 78, sass/alfamarine.scss */
+/* line 88, sass/alfamarine.scss */
 .fusion-megamenu {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2efef+0,fffcfc+100 */
   background: #f2efef;
@@ -115,7 +125,7 @@ body, html {
   /* IE6-9 */
 }
 
-/* line 86, sass/alfamarine.scss */
+/* line 96, sass/alfamarine.scss */
 .fusion-main-menu .sub-menu {
   left: 50%;
   border: 5px solid #8ecff6 !important;
@@ -137,17 +147,17 @@ body, html {
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 102, sass/alfamarine.scss */
+/* line 112, sass/alfamarine.scss */
 .fusion-main-menu .sub-menu a {
   text-align: center;
   padding: 15px !important;
 }
-/* line 106, sass/alfamarine.scss */
+/* line 116, sass/alfamarine.scss */
 ©
 .fusion-main-menu .sub-menu a:hover {
   color: white;
 }
-/* line 111, sass/alfamarine.scss */
+/* line 121, sass/alfamarine.scss */
 .fusion-main-menu .sub-menu:before {
   content: "";
   position: absolute;
@@ -162,45 +172,136 @@ body, html {
   transform: translateX(-50%);
 }
 
+/* line 136, sass/alfamarine.scss */
+.fusion-megamenu-wrapper .fusion-megamenu-submenu .sub-menu {
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  border: none !important;
+  background: none;
+}
+/* line 143, sass/alfamarine.scss */
+.fusion-megamenu-wrapper .fusion-megamenu-submenu .sub-menu:before {
+  display: none;
+}
+/* line 148, sass/alfamarine.scss */
+.fusion-megamenu-wrapper .fusion-megamenu-submenu .sub-menu a {
+  background: none;
+  border: none;
+  height: auto;
+  max-height: initial;
+  color: #2995c6;
+  line-height: 26px;
+  text-align: left;
+  padding: 0 15px 4px 25px !important;
+}
+/* line 158, sass/alfamarine.scss */
+.fusion-megamenu-wrapper .fusion-megamenu-submenu .sub-menu a .fusion-megamenu-bullet {
+  color: white;
+  margin-top: 1px;
+  border: none;
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+/* line 166, sass/alfamarine.scss */
+.fusion-megamenu-wrapper .fusion-megamenu-submenu .sub-menu a .fusion-megamenu-bullet:after {
+  content: "\f18e";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+  color: #2995c6;
+  line-height: 24px;
+  padding: 0 0 0 1px;
+  margin: 0;
+  top: 0;
+  width: 24px;
+  font-size: 24px;
+  height: 24px;
+  text-align: center;
+}
+/* line 183, sass/alfamarine.scss */
+.fusion-megamenu-wrapper .fusion-megamenu-submenu .sub-menu a:hover {
+  background: none !important;
+  color: #223b73 !important;
+}
+/* line 189, sass/alfamarine.scss */
+.fusion-megamenu-wrapper .fusion-megamenu-submenu .sub-menu a:hover .fusion-megamenu-bullet:after {
+  color: #223b73;
+}
+
+/* line 197, sass/alfamarine.scss */
+.fusion-megamenu-icon {
+  display: block;
+  width: 100%;
+  position: relative;
+  max-height: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin: 0 0 12px 0;
+}
+/* line 207, sass/alfamarine.scss */
+.fusion-megamenu-icon img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-height: initial;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 219, sass/alfamarine.scss */
+.fusion-megamenu-title {
+  padding: 15px;
+}
+
+/* line 222, sass/alfamarine.scss */
+.fusion-megamenu-wrapper .fusion-megamenu-submenu {
+  padding: 0px 0px 15px 0;
+}
+
 /* END Avada Menü fix */
-/* line 127, sass/alfamarine.scss */
+/* line 227, sass/alfamarine.scss */
 .fusion-separator.sep-shadow:after {
   background: radial-gradient(ellipse at 50% -50%, rgba(62, 94, 139, 0.38) 0px, rgba(255, 255, 255, 0) 65%);
 }
 
-/* line 130, sass/alfamarine.scss */
+/* line 230, sass/alfamarine.scss */
 .fusion-separator .icon-wrapper i:before {
   font-size: 18px;
 }
 
-/* line 135, sass/alfamarine.scss */
+/* line 235, sass/alfamarine.scss */
 .vehicles-holder.style-slide {
   min-height: 250px;
 }
 
-/* line 140, sass/alfamarine.scss */
+/* line 240, sass/alfamarine.scss */
 .button-pill {
   border-radius: 50px;
 }
 
-/* line 143, sass/alfamarine.scss */
+/* line 243, sass/alfamarine.scss */
 .pagination {
   text-align: center;
   margin: 15px auto;
   float: none;
 }
-/* line 148, sass/alfamarine.scss */
+/* line 248, sass/alfamarine.scss */
 .pagination a.page-numbers {
   color: #616161;
   margin: 0 5px;
   font-size: 0.9em;
 }
-/* line 155, sass/alfamarine.scss */
+/* line 255, sass/alfamarine.scss */
 .pagination .page-numbers.prev,
 .pagination .page-numbers.next {
   color: #444444;
 }
-/* line 159, sass/alfamarine.scss */
+/* line 259, sass/alfamarine.scss */
 .pagination a.page-numbers {
   background: #e2e2e2;
   display: inline-block;
@@ -214,24 +315,24 @@ body, html {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 172, sass/alfamarine.scss */
+/* line 272, sass/alfamarine.scss */
 .pagination a.page-numbers:hover {
   background: #2995c6;
   color: white;
 }
-/* line 178, sass/alfamarine.scss */
+/* line 278, sass/alfamarine.scss */
 .pagination a.page-numbers.prev,
 .pagination a.page-numbers.next {
   width: auto;
   padding: 0 10px;
   color: #8c8c8c;
 }
-/* line 183, sass/alfamarine.scss */
+/* line 283, sass/alfamarine.scss */
 .pagination a.page-numbers.prev:hover,
 .pagination a.page-numbers.next:hover {
   color: white;
 }
-/* line 187, sass/alfamarine.scss */
+/* line 287, sass/alfamarine.scss */
 .pagination .page-numbers.current {
   background: #2995c6;
   border: none;
@@ -248,7 +349,7 @@ body, html {
   border-radius: 30px;
 }
 
-/* line 203, sass/alfamarine.scss */
+/* line 303, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area {
   background-image: url("../../images/footer-bg-bottom-v1.svg");
   background-position: bottom center;
@@ -257,15 +358,15 @@ body, html {
   padding-top: 0;
   padding-bottom: 95px;
 }
-/* line 211, sass/alfamarine.scss */
+/* line 311, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area .widget_nav_menu {
   margin: 5px 0;
 }
-/* line 215, sass/alfamarine.scss */
+/* line 315, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area ul {
   text-align: center;
 }
-/* line 217, sass/alfamarine.scss */
+/* line 317, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area ul li {
   display: inline-block;
   *display: inline;
@@ -273,21 +374,21 @@ body, html {
   padding: 12px;
   line-height: 1;
 }
-/* line 224, sass/alfamarine.scss */
+/* line 324, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area ul li a {
   font-family: 'Oswald';
   font-weight: normal;
   font-size: 1.4em;
   text-shadow: 0 1px 3px #000000 !important;
 }
-/* line 230, sass/alfamarine.scss */
+/* line 330, sass/alfamarine.scss */
 .fusion-footer footer.fusion-footer-widget-area ul li a:before {
   content: "";
   display: none;
 }
 
 /* Header */
-/* line 240, sass/alfamarine.scss */
+/* line 340, sass/alfamarine.scss */
 .logo-slogan {
   font-family: 'Oswald';
   text-transform: uppercase;
@@ -298,18 +399,18 @@ body, html {
   font-size: 1.7em;
 }
 
-/* line 251, sass/alfamarine.scss */
+/* line 351, sass/alfamarine.scss */
 .fusion-header-content-3-wrapper {
   padding-bottom: 23px;
 }
-/* line 255, sass/alfamarine.scss */
+/* line 355, sass/alfamarine.scss */
 .fusion-header-content-3-wrapper .search-table .search-field input[type=text] {
   height: 32px;
   border-color: #bde3fa !important;
   color: #223b73 !important;
   font-size: 0.95em;
 }
-/* line 263, sass/alfamarine.scss */
+/* line 363, sass/alfamarine.scss */
 .fusion-header-content-3-wrapper .search-table .search-button input[type=submit] {
   font-size: 20px;
   height: 32px;
@@ -319,13 +420,13 @@ body, html {
   background: transparent !important;
   color: #bde3fa !important;
 }
-/* line 271, sass/alfamarine.scss */
+/* line 371, sass/alfamarine.scss */
 .fusion-header-content-3-wrapper .search-table .search-button input[type=submit]:hover {
   background: #bde3fa !important;
   color: white !important;
 }
 
-/* line 279, sass/alfamarine.scss */
+/* line 379, sass/alfamarine.scss */
 .fusion-header-v4 .fusion-logo .fusion-header-content-3-wrapper .fusion-header-tagline a {
   background: #97d3f7 !important;
   padding: 8px;
@@ -334,37 +435,37 @@ body, html {
   border-radius: 5px;
 }
 
-/* line 286, sass/alfamarine.scss */
+/* line 386, sass/alfamarine.scss */
 .fusion-social-networks {
   overflow: initial;
 }
 
 /* END Header */
-/* line 291, sass/alfamarine.scss */
+/* line 391, sass/alfamarine.scss */
 .sc-header {
   margin: 0 0 40px 0;
 }
-/* line 292, sass/alfamarine.scss */
+/* line 392, sass/alfamarine.scss */
 .sc-header h1 {
   text-align: center;
 }
-/* line 295, sass/alfamarine.scss */
+/* line 395, sass/alfamarine.scss */
 .sc-header h1 strong {
   color: #5ebbf3;
 }
 
-/* line 301, sass/alfamarine.scss */
+/* line 401, sass/alfamarine.scss */
 .sc-list-nodata {
   text-align: center;
   padding: 10px 0 80px 0;
 }
-/* line 305, sass/alfamarine.scss */
+/* line 405, sass/alfamarine.scss */
 .sc-list-nodata h3 {
   text-align: center;
   color: black;
 }
 
-/* line 313, sass/alfamarine.scss */
+/* line 413, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder > .list-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,24 +473,24 @@ body, html {
   flex-wrap: wrap;
   margin: 0 -20px;
 }
-/* line 322, sass/alfamarine.scss */
+/* line 422, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item {
   position: relative;
 }
-/* line 324, sass/alfamarine.scss */
+/* line 424, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper {
   padding: 20px;
 }
-/* line 327, sass/alfamarine.scss */
+/* line 427, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .title {
   height: 85px;
   overflow: hidden;
 }
-/* line 330, sass/alfamarine.scss */
+/* line 430, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .title h3 {
   margin: 0 0 10px 0;
 }
-/* line 332, sass/alfamarine.scss */
+/* line 432, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .title h3 a {
   text-transform: uppercase;
   line-height: 1;
@@ -397,11 +498,11 @@ body, html {
   font-size: 1.3em;
   letter-spacing: -1px;
 }
-/* line 339, sass/alfamarine.scss */
+/* line 439, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .title h3 a:hover {
   color: #5ebbf3;
 }
-/* line 346, sass/alfamarine.scss */
+/* line 446, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .img {
   height: 255px;
   max-height: 255px;
@@ -412,7 +513,7 @@ body, html {
   -moz-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 356, sass/alfamarine.scss */
+/* line 456, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .img img {
   max-height: 255px;
   height: 255px;
@@ -422,7 +523,7 @@ body, html {
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 366, sass/alfamarine.scss */
+/* line 466, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .desc {
   font-size: 0.9em;
   color: #222222;
@@ -430,14 +531,14 @@ body, html {
   text-align: justify;
   line-height: 1.3;
 }
-/* line 374, sass/alfamarine.scss */
+/* line 474, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .date {
   line-height: 1;
   margin-top: 20px;
   font-size: 0.8em;
   color: #bababa;
 }
-/* line 381, sass/alfamarine.scss */
+/* line 481, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper a.post-read {
   font-family: 'Oswald';
   background: #5ebbf3;
@@ -453,11 +554,11 @@ body, html {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 396, sass/alfamarine.scss */
+/* line 496, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper a.post-read:hover {
   background: #2fa7ef;
 }
-/* line 406, sass/alfamarine.scss */
+/* line 506, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.homepage .post-list-item:after {
   content: "";
   position: absolute;
@@ -475,29 +576,29 @@ body, html {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9bd0f0', endColorstr='#009bd0f0',GradientType=0 );
   /* IE6-9 */
 }
-/* line 424, sass/alfamarine.scss */
+/* line 524, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.homepage .post-list-item:nth-child(3):after {
   display: none;
 }
-/* line 431, sass/alfamarine.scss */
+/* line 531, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.grid-3x > .list-wrapper > article {
   flex-basis: calc(100%/3);
 }
-/* line 436, sass/alfamarine.scss */
+/* line 536, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.grid-2x > .list-wrapper > article {
   flex-basis: calc(100%/3);
 }
-/* line 441, sass/alfamarine.scss */
+/* line 541, sass/alfamarine.scss */
 .sc-postslist-src_cat-holder.grid-4x > .list-wrapper > article {
   flex-basis: calc(100%/4);
 }
 
-/* line 447, sass/alfamarine.scss */
+/* line 547, sass/alfamarine.scss */
 .post-content h1 {
   margin: 5px 0;
 }
 
-/* line 452, sass/alfamarine.scss */
+/* line 552, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder > .vehicle-list-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,25 +606,25 @@ body, html {
   flex-wrap: wrap;
   margin: 25px -5px;
 }
-/* line 461, sass/alfamarine.scss */
+/* line 561, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item {
   flex-basis: calc(100%/4);
   margin-bottom: 15px;
 }
-/* line 465, sass/alfamarine.scss */
+/* line 565, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .item-wrapper {
   padding: 5px;
 }
-/* line 469, sass/alfamarine.scss */
+/* line 569, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .title {
   background: #263c6f;
 }
-/* line 471, sass/alfamarine.scss */
+/* line 571, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .title h3 {
   line-height: 1.2;
   margin: 0;
 }
-/* line 475, sass/alfamarine.scss */
+/* line 575, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .title a {
   color: white;
   text-align: center;
@@ -532,14 +633,14 @@ body, html {
   font-size: 0.9em;
   padding: 10px;
 }
-/* line 485, sass/alfamarine.scss */
+/* line 585, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .img {
   max-height: 200px;
   height: 200px;
   overflow: hidden;
   position: relative;
 }
-/* line 491, sass/alfamarine.scss */
+/* line 591, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .img img {
   position: absolute;
   max-height: 105%;
@@ -550,7 +651,7 @@ body, html {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 503, sass/alfamarine.scss */
+/* line 603, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params {
   background: #f1f1f1;
   display: -webkit-box;
@@ -558,7 +659,7 @@ body, html {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 510, sass/alfamarine.scss */
+/* line 610, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params .param {
   flex-basis: calc(100%/3);
   font-size: 0.85em;
@@ -569,13 +670,13 @@ body, html {
   border: 1px solid #dadada;
   text-align: left;
 }
-/* line 520, sass/alfamarine.scss */
+/* line 620, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params .param .value {
   color: #444444;
   font-weight: bold;
   padding-left: 5px;
 }
-/* line 525, sass/alfamarine.scss */
+/* line 625, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params .param:last-child {
   flex-basis: 66.66667%;
   text-align: right;
@@ -583,15 +684,15 @@ body, html {
   background: #75abd4;
   font-size: 0.8em;
 }
-/* line 532, sass/alfamarine.scss */
+/* line 632, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .params .param:last-child .value {
   color: white;
 }
-/* line 539, sass/alfamarine.scss */
+/* line 639, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .button {
   margin-top: -5px;
 }
-/* line 541, sass/alfamarine.scss */
+/* line 641, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .button a {
   background: #dedede;
   padding: 5px;
@@ -604,18 +705,18 @@ body, html {
   font-size: 0.8em;
   font-family: 'Oswald';
 }
-/* line 553, sass/alfamarine.scss */
+/* line 653, sass/alfamarine.scss */
 .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .button a:hover {
   color: white;
   background: #223b73;
 }
 
-/* line 562, sass/alfamarine.scss */
+/* line 662, sass/alfamarine.scss */
 .rev_slider_wrapper .shadow-left {
   display: none !important;
 }
 
-/* line 565, sass/alfamarine.scss */
+/* line 665, sass/alfamarine.scss */
 .rev_slider_wrapper .shadow-right {
   background-image: url("../../images/slide-overlay-bottom.svg");
   background-repeat: no-repeat;
@@ -625,35 +726,35 @@ body, html {
   margin-bottom: -2px;
 }
 
-/* line 573, sass/alfamarine.scss */
+/* line 673, sass/alfamarine.scss */
 .avada-skin-rev {
   border: none !important;
 }
 
-/* line 578, sass/alfamarine.scss */
+/* line 678, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder > .list-wrapper {
   margin: 0 -20px;
 }
-/* line 583, sass/alfamarine.scss */
+/* line 683, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item {
   float: left;
   width: 50%;
   position: relative;
 }
-/* line 587, sass/alfamarine.scss */
+/* line 687, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper {
   padding: 20px;
 }
-/* line 590, sass/alfamarine.scss */
+/* line 690, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title {
   overflow: hidden;
 }
-/* line 592, sass/alfamarine.scss */
+/* line 692, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title h3 {
   margin: 0 0 5px 0;
   line-height: 1.2;
 }
-/* line 595, sass/alfamarine.scss */
+/* line 695, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title h3 a {
   text-transform: uppercase;
   line-height: 1;
@@ -661,11 +762,11 @@ body, html {
   font-size: 1.4em;
   letter-spacing: -1px;
 }
-/* line 602, sass/alfamarine.scss */
+/* line 702, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title h3 a:hover {
   color: #5ebbf3;
 }
-/* line 608, sass/alfamarine.scss */
+/* line 708, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .title h4 {
   color: #8ecff6;
   margin: 5px 0 12px 0;
@@ -674,7 +775,7 @@ body, html {
   font-weight: normal;
   font-family: 'Oswald';
 }
-/* line 618, sass/alfamarine.scss */
+/* line 718, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img {
   float: left;
   width: 40%;
@@ -685,7 +786,7 @@ body, html {
   text-align: center;
   margin: 0;
 }
-/* line 628, sass/alfamarine.scss */
+/* line 728, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img img {
   max-height: initial;
   height: auto;
@@ -698,7 +799,7 @@ body, html {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 641, sass/alfamarine.scss */
+/* line 741, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img .flags {
   position: absolute;
   top: 0;
@@ -706,7 +807,7 @@ body, html {
   z-index: 999;
   pointer-events: none;
 }
-/* line 647, sass/alfamarine.scss */
+/* line 747, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img .flags .flag {
   background: #555555;
   color: white;
@@ -718,16 +819,16 @@ body, html {
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
-/* line 659, sass/alfamarine.scss */
+/* line 759, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img .flags .flag.flag-highlight {
   background: #c92e36;
 }
-/* line 663, sass/alfamarine.scss */
+/* line 763, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img .flags .flag.flag-exclusive {
   color: #f5c65e;
   background: #222222;
 }
-/* line 670, sass/alfamarine.scss */
+/* line 770, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .after-image-info {
   background: #f1f1f1;
   padding: 10px;
@@ -735,17 +836,17 @@ body, html {
   color: #2995c6;
   position: relative;
 }
-/* line 677, sass/alfamarine.scss */
+/* line 777, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .after-image-info .rundate {
   float: left;
   font-size: 1.1em;
 }
-/* line 680, sass/alfamarine.scss */
+/* line 780, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .after-image-info .rundate i {
   margin: 0 8px 0 5px;
   font-size: 18px;
 }
-/* line 685, sass/alfamarine.scss */
+/* line 785, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .after-image-info .price {
   position: absolute;
   right: 0;
@@ -759,7 +860,7 @@ body, html {
   font-size: 1.8em;
   font-family: 'Oswald';
 }
-/* line 699, sass/alfamarine.scss */
+/* line 799, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .desc {
   float: left;
   padding: 0 0 0 10px;
@@ -769,7 +870,7 @@ body, html {
   line-height: 1.5;
   color: #222222;
 }
-/* line 708, sass/alfamarine.scss */
+/* line 808, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper a.post-read {
   font-family: 'Oswald';
   background: #5ebbf3;
@@ -787,11 +888,11 @@ body, html {
   display: block;
   float: left;
 }
-/* line 725, sass/alfamarine.scss */
+/* line 825, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper a.post-read:hover {
   background: #2fa7ef;
 }
-/* line 730, sass/alfamarine.scss */
+/* line 830, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info {
   background: #e8e8e8;
   border: 1px solid #c3c3c3;
@@ -803,28 +904,28 @@ body, html {
   margin-top: 8px;
   color: #5f5f5f;
 }
-/* line 741, sass/alfamarine.scss */
+/* line 841, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info i {
   margin: 0 6px 0 0;
   float: left;
 }
-/* line 746, sass/alfamarine.scss */
+/* line 846, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info div {
   float: left;
   position: relative;
   padding: 0 8px;
 }
-/* line 751, sass/alfamarine.scss */
+/* line 851, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info div strong {
   color: #3c3c3c;
 }
-/* line 755, sass/alfamarine.scss */
+/* line 855, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .more-info div i {
   line-height: 18px;
   color: #3c3c3c;
   font-size: 14px;
 }
-/* line 768, sass/alfamarine.scss */
+/* line 868, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item:nth-child(2):after {
   content: "";
   position: absolute;
@@ -842,14 +943,14 @@ body, html {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9bd0f0', endColorstr='#009bd0f0',GradientType=1 );
   /* IE6-9 */
 }
-/* line 786, sass/alfamarine.scss */
+/* line 886, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item.item1 .img {
   float: none;
   width: 100%;
   height: 280px;
   max-height: 280px;
 }
-/* line 792, sass/alfamarine.scss */
+/* line 892, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item.item1 .img img {
   height: auto;
   max-height: initial;
@@ -861,14 +962,14 @@ body, html {
   left: 50%;
   top: 50%;
 }
-/* line 804, sass/alfamarine.scss */
+/* line 904, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item.item1 .desc {
   width: 100%;
   font-size: 0.95em;
   padding: 10px 0 0 0;
   line-height: 1.5;
 }
-/* line 810, sass/alfamarine.scss */
+/* line 910, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-home .tour-list-item.item1:after {
   content: "";
   position: absolute;
@@ -886,30 +987,30 @@ body, html {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9bd0f0', endColorstr='#009bd0f0',GradientType=0 );
   /* IE6-9 */
 }
-/* line 829, sass/alfamarine.scss */
+/* line 929, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .list-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 833, sass/alfamarine.scss */
+/* line 933, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item {
   flex-basis: calc(100%/2);
   position: relative;
 }
-/* line 836, sass/alfamarine.scss */
+/* line 936, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper {
   padding: 20px;
 }
-/* line 839, sass/alfamarine.scss */
+/* line 939, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title {
   overflow: hidden;
 }
-/* line 841, sass/alfamarine.scss */
+/* line 941, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title h3 {
   margin: 0 0 5px 0;
   line-height: 1.2;
 }
-/* line 844, sass/alfamarine.scss */
+/* line 944, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title h3 a {
   text-transform: uppercase;
   line-height: 1;
@@ -917,11 +1018,11 @@ body, html {
   font-size: 1.2em;
   letter-spacing: -1px;
 }
-/* line 851, sass/alfamarine.scss */
+/* line 951, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title h3 a:hover {
   color: #5ebbf3;
 }
-/* line 857, sass/alfamarine.scss */
+/* line 957, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title h4 {
   color: #8ecff6;
   margin: 5px 0 12px 0;
@@ -930,7 +1031,7 @@ body, html {
   font-weight: normal;
   font-family: 'Oswald';
 }
-/* line 867, sass/alfamarine.scss */
+/* line 967, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .img {
   width: 100%;
   height: 4000px;
@@ -940,7 +1041,7 @@ body, html {
   text-align: center;
   margin: 0;
 }
-/* line 876, sass/alfamarine.scss */
+/* line 976, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .img img {
   max-height: initial;
   height: auto;
@@ -953,7 +1054,7 @@ body, html {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 889, sass/alfamarine.scss */
+/* line 989, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info {
   background: #f1f1f1;
   padding: 10px;
@@ -961,17 +1062,17 @@ body, html {
   color: #2995c6;
   position: relative;
 }
-/* line 896, sass/alfamarine.scss */
+/* line 996, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info .rundate {
   float: left;
   font-size: 1.1em;
 }
-/* line 899, sass/alfamarine.scss */
+/* line 999, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info .rundate i {
   margin: 0 8px 0 5px;
   font-size: 18px;
 }
-/* line 904, sass/alfamarine.scss */
+/* line 1004, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info .price {
   position: absolute;
   right: 0;
@@ -985,7 +1086,7 @@ body, html {
   font-size: 1.8em;
   font-family: 'Oswald';
 }
-/* line 918, sass/alfamarine.scss */
+/* line 1018, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .desc {
   padding: 0;
   width: 100%;
@@ -994,13 +1095,13 @@ body, html {
   line-height: 1.5;
   color: #222222;
 }
-/* line 926, sass/alfamarine.scss */
+/* line 1026, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .desc .desc-wrapper {
   margin: 10px 0;
   overflow: hidden;
   max-height: 100px;
 }
-/* line 932, sass/alfamarine.scss */
+/* line 1032, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper a.post-read {
   font-family: 'Oswald';
   background: #5ebbf3;
@@ -1018,11 +1119,11 @@ body, html {
   display: block;
   float: left;
 }
-/* line 949, sass/alfamarine.scss */
+/* line 1049, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper a.post-read:hover {
   background: #2fa7ef;
 }
-/* line 954, sass/alfamarine.scss */
+/* line 1054, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info {
   background: #e8e8e8;
   border: 1px solid #c3c3c3;
@@ -1034,51 +1135,51 @@ body, html {
   margin-top: 8px;
   color: #5f5f5f;
 }
-/* line 965, sass/alfamarine.scss */
+/* line 1065, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info i {
   margin: 0 6px 0 0;
   float: left;
 }
-/* line 970, sass/alfamarine.scss */
+/* line 1070, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info div {
   float: left;
   position: relative;
   padding: 0 8px;
 }
-/* line 975, sass/alfamarine.scss */
+/* line 1075, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info div strong {
   color: #3c3c3c;
 }
-/* line 979, sass/alfamarine.scss */
+/* line 1079, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .more-info div i {
   line-height: 18px;
   color: #3c3c3c;
   font-size: 14px;
 }
-/* line 993, sass/alfamarine.scss */
+/* line 1093, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .list-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 997, sass/alfamarine.scss */
+/* line 1097, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item {
   flex-basis: calc(100%/4);
   position: relative;
 }
-/* line 1000, sass/alfamarine.scss */
+/* line 1100, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper {
   padding: 20px;
 }
-/* line 1003, sass/alfamarine.scss */
+/* line 1103, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .title {
   overflow: hidden;
 }
-/* line 1005, sass/alfamarine.scss */
+/* line 1105, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .title h3 {
   margin: 0 0 5px 0;
   line-height: 1.2;
 }
-/* line 1008, sass/alfamarine.scss */
+/* line 1108, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .title h3 a {
   text-transform: uppercase;
   line-height: 1;
@@ -1086,11 +1187,11 @@ body, html {
   font-size: 1em;
   letter-spacing: -1px;
 }
-/* line 1015, sass/alfamarine.scss */
+/* line 1115, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .title h3 a:hover {
   color: #5ebbf3;
 }
-/* line 1021, sass/alfamarine.scss */
+/* line 1121, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .title h4 {
   color: #8ecff6;
   margin: 5px 0 12px 0;
@@ -1099,7 +1200,7 @@ body, html {
   font-weight: normal;
   font-family: 'Oswald';
 }
-/* line 1031, sass/alfamarine.scss */
+/* line 1131, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .img {
   width: 100%;
   height: 160px;
@@ -1109,7 +1210,7 @@ body, html {
   text-align: center;
   margin: 0;
 }
-/* line 1040, sass/alfamarine.scss */
+/* line 1140, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .img img {
   max-height: initial;
   height: auto;
@@ -1122,7 +1223,7 @@ body, html {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 1053, sass/alfamarine.scss */
+/* line 1153, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .after-image-info {
   background: #f1f1f1;
   padding: 10px;
@@ -1131,16 +1232,16 @@ body, html {
   color: #2995c6;
   position: relative;
 }
-/* line 1061, sass/alfamarine.scss */
+/* line 1161, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .after-image-info .rundate {
   padding: 5px 0 0 0;
   font-size: 0.9em;
 }
-/* line 1065, sass/alfamarine.scss */
+/* line 1165, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .after-image-info .rundate strong {
   font-size: 0.9em;
 }
-/* line 1070, sass/alfamarine.scss */
+/* line 1170, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .after-image-info .price {
   position: absolute;
   left: 50%;
@@ -1155,7 +1256,7 @@ body, html {
   font-family: 'Oswald';
   transform: translateX(-50%);
 }
-/* line 1085, sass/alfamarine.scss */
+/* line 1185, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .desc {
   padding: 0;
   width: 100%;
@@ -1164,13 +1265,13 @@ body, html {
   line-height: 1.3;
   color: #222222;
 }
-/* line 1093, sass/alfamarine.scss */
+/* line 1193, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .desc .desc-wrapper {
   margin: 5px 0;
   overflow: hidden;
   max-height: 90px;
 }
-/* line 1099, sass/alfamarine.scss */
+/* line 1199, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper a.post-read {
   font-family: 'Oswald';
   background: #c0c0c0;
@@ -1190,11 +1291,11 @@ body, html {
   height: 28px;
   line-height: 28px;
 }
-/* line 1118, sass/alfamarine.scss */
+/* line 1218, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper a.post-read:hover {
   background: #2fa7ef;
 }
-/* line 1123, sass/alfamarine.scss */
+/* line 1223, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .more-info {
   background: #e8e8e8;
   border: 1px solid #c3c3c3;
@@ -1205,12 +1306,12 @@ body, html {
   font-size: 1.1em;
   color: #5f5f5f;
 }
-/* line 1133, sass/alfamarine.scss */
+/* line 1233, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .more-info i {
   margin: 0 6px 0 0;
   float: left;
 }
-/* line 1138, sass/alfamarine.scss */
+/* line 1238, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .more-info div {
   text-align: center;
   position: relative;
@@ -1218,31 +1319,31 @@ body, html {
   margin: 0 -1px;
   font-size: 1em;
 }
-/* line 1145, sass/alfamarine.scss */
+/* line 1245, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .more-info div strong {
   color: #3c3c3c;
 }
-/* line 1149, sass/alfamarine.scss */
+/* line 1249, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .more-info div i {
   line-height: 18px;
   color: #3c3c3c;
   font-size: 14px;
 }
-/* line 1161, sass/alfamarine.scss */
+/* line 1261, sass/alfamarine.scss */
 .sc-tourssc-src_db-holder h4 a:hover {
   color: #1c6587 !important;
 }
 
-/* line 1168, sass/alfamarine.scss */
+/* line 1268, sass/alfamarine.scss */
 body.single-tours #main {
   padding-top: 0 !important;
 }
 
-/* line 1174, sass/alfamarine.scss */
+/* line 1274, sass/alfamarine.scss */
 .tour-page .header {
   margin-bottom: 20px;
 }
-/* line 1175, sass/alfamarine.scss */
+/* line 1275, sass/alfamarine.scss */
 .tour-page .header h1 {
   text-align: center;
   font-family: 'Oswald';
@@ -1250,13 +1351,13 @@ body.single-tours #main {
   color: #223b73;
   margin: 10px 0 5px 0;
 }
-/* line 1186, sass/alfamarine.scss */
+/* line 1286, sass/alfamarine.scss */
 .tour-page .nav-links ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 1191, sass/alfamarine.scss */
+/* line 1291, sass/alfamarine.scss */
 .tour-page .nav-links ul a {
   padding: 0 10px;
   margin: 4px 0;
@@ -1266,50 +1367,50 @@ body.single-tours #main {
   font-family: 'Oswald';
   border-left: 5px solid #223b73;
 }
-/* line 1200, sass/alfamarine.scss */
+/* line 1300, sass/alfamarine.scss */
 .tour-page .nav-links ul a:hover {
   color: #2995c6;
   border-left: 5px solid #2995c6;
 }
 
-/* line 1210, sass/alfamarine.scss */
+/* line 1310, sass/alfamarine.scss */
 .boat-page .boat-page-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 -10px;
 }
-/* line 1216, sass/alfamarine.scss */
+/* line 1316, sass/alfamarine.scss */
 .boat-page .boat-page-top .images, .boat-page .boat-page-top .datas {
   padding: 0 10px;
 }
-/* line 1220, sass/alfamarine.scss */
+/* line 1320, sass/alfamarine.scss */
 .boat-page .boat-page-top .images {
   flex-basis: 60%;
 }
-/* line 1223, sass/alfamarine.scss */
+/* line 1323, sass/alfamarine.scss */
 .boat-page .boat-page-top .datas {
   flex-basis: 40%;
 }
-/* line 1227, sass/alfamarine.scss */
+/* line 1327, sass/alfamarine.scss */
 .boat-page .boat-page-top .datas .title h1 {
   margin: 0 0 15px 0;
   color: #223b73;
   text-transform: uppercase;
   font-size: 2.2em;
 }
-/* line 1236, sass/alfamarine.scss */
+/* line 1336, sass/alfamarine.scss */
 .boat-page .boat-page-top .datas .params .param {
   position: relative;
   line-height: 1;
   color: #2995c6;
   font-size: 1.2em;
 }
-/* line 1242, sass/alfamarine.scss */
+/* line 1342, sass/alfamarine.scss */
 .boat-page .boat-page-top .datas .params .param:after {
   position: absolute;
   content: "";
-  height: 2px;
+  height: 1px;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -1323,19 +1424,19 @@ body.single-tours #main {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00bde3fa', endColorstr='#00bde3fa',GradientType=1 );
   /* IE6-9 */
 }
-/* line 1257, sass/alfamarine.scss */
+/* line 1357, sass/alfamarine.scss */
 .boat-page .boat-page-top .datas .params .param .title, .boat-page .boat-page-top .datas .params .param .value {
   float: left;
   width: 50%;
   text-align: left;
   padding: 15px 0;
 }
-/* line 1263, sass/alfamarine.scss */
+/* line 1363, sass/alfamarine.scss */
 .boat-page .boat-page-top .datas .params .param .value {
   font-weight: bold;
   color: #20759c;
 }
-/* line 1271, sass/alfamarine.scss */
+/* line 1371, sass/alfamarine.scss */
 .boat-page .boat-description {
   border: 10px solid #f1f1f1;
   border-left: none;
@@ -1343,11 +1444,21 @@ body.single-tours #main {
   padding: 10px 0;
   margin: 20px 0;
 }
-/* line 1278, sass/alfamarine.scss */
+/* line 1378, sass/alfamarine.scss */
+.boat-page .boat-description h1 {
+  color: #515151;
+  margin: 5px 0 25px 0;
+  font-family: 'Oswald';
+}
+/* line 1384, sass/alfamarine.scss */
+.boat-page .boat-description h2 {
+  font-size: 1.6em;
+}
+/* line 1388, sass/alfamarine.scss */
 .boat-page .related-list {
   margin: 0 0 20px 0;
 }
-/* line 1280, sass/alfamarine.scss */
+/* line 1390, sass/alfamarine.scss */
 .boat-page .related-list h2 {
   color: #8ecff6;
   font-size: 2.8em;
@@ -1357,23 +1468,23 @@ body.single-tours #main {
   text-transform: uppercase;
 }
 
-/* line 1291, sass/alfamarine.scss */
+/* line 1401, sass/alfamarine.scss */
 .fusion-button.button-blue {
   background: #223b73;
   color: white;
 }
-/* line 1295, sass/alfamarine.scss */
+/* line 1405, sass/alfamarine.scss */
 .fusion-button.button-blue:hover {
   background: #2995c6;
   color: white;
 }
 
 /* Footer */
-/* line 1301, sass/alfamarine.scss */
+/* line 1411, sass/alfamarine.scss */
 .fusion-footer {
   position: relative;
 }
-/* line 1303, sass/alfamarine.scss */
+/* line 1413, sass/alfamarine.scss */
 .fusion-footer:before {
   content: "";
   position: absolute;
@@ -1392,39 +1503,39 @@ body.single-tours #main {
   pointer-events: none;
 }
 
-/* line 1322, sass/alfamarine.scss */
+/* line 1432, sass/alfamarine.scss */
 footer .custom-footer-logo {
   margin-bottom: 20px;
   margin-top: -35px;
 }
-/* line 1326, sass/alfamarine.scss */
+/* line 1436, sass/alfamarine.scss */
 footer .footer-facebook-likebox {
   position: absolute;
   right: 125px;
   bottom: -82px;
 }
-/* line 1331, sass/alfamarine.scss */
+/* line 1441, sass/alfamarine.scss */
 footer .am-contact {
   font-size: 1.2em;
   font-family: 'Oswald';
   font-weight: normal;
 }
-/* line 1336, sass/alfamarine.scss */
+/* line 1446, sass/alfamarine.scss */
 footer .am-contact i {
   font-size: 22px;
   width: 22px;
   text-align: center;
   margin-right: 10px;
 }
-/* line 1344, sass/alfamarine.scss */
+/* line 1454, sass/alfamarine.scss */
 footer a:hover {
   color: #f9d179 !important;
 }
-/* line 1348, sass/alfamarine.scss */
+/* line 1458, sass/alfamarine.scss */
 footer .fusion-copyright-notice {
   color: #bae0f3;
 }
-/* line 1351, sass/alfamarine.scss */
+/* line 1461, sass/alfamarine.scss */
 footer .sailboat-draw {
   pointer-events: none;
   position: absolute;
@@ -1433,7 +1544,7 @@ footer .sailboat-draw {
   height: 240px;
   animation: sailboat 20s infinite;
 }
-/* line 1359, sass/alfamarine.scss */
+/* line 1469, sass/alfamarine.scss */
 footer .sailboat-draw img {
   max-height: 100%;
 }
@@ -1441,54 +1552,54 @@ footer .sailboat-draw img {
 /* END Footer */
 /* KEYFRAMES */
 @webkit-keyframes sailboat {
-  /* line 1369, sass/alfamarine.scss */
+  /* line 1479, sass/alfamarine.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 1370, sass/alfamarine.scss */
+  /* line 1480, sass/alfamarine.scss */
   25% {
     -webkit-transform: rotate(-10deg);
   }
 
-  /* line 1371, sass/alfamarine.scss */
+  /* line 1481, sass/alfamarine.scss */
   50% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 1372, sass/alfamarine.scss */
+  /* line 1482, sass/alfamarine.scss */
   75% {
     -webkit-transform: rotate(10deg);
   }
 
-  /* line 1373, sass/alfamarine.scss */
+  /* line 1483, sass/alfamarine.scss */
   100% {
     -webkit-transform: rotate(0deg);
   }
 }
 
 @keyframes sailboat {
-  /* line 1376, sass/alfamarine.scss */
+  /* line 1486, sass/alfamarine.scss */
   0% {
     transform: rotate(0deg);
   }
 
-  /* line 1377, sass/alfamarine.scss */
+  /* line 1487, sass/alfamarine.scss */
   25% {
     transform: rotate(-10deg);
   }
 
-  /* line 1378, sass/alfamarine.scss */
+  /* line 1488, sass/alfamarine.scss */
   50% {
     transform: rotate(0deg);
   }
 
-  /* line 1379, sass/alfamarine.scss */
+  /* line 1489, sass/alfamarine.scss */
   75% {
     transform: rotate(10deg);
   }
 
-  /* line 1380, sass/alfamarine.scss */
+  /* line 1490, sass/alfamarine.scss */
   100% {
     transform: rotate(0deg);
   }
