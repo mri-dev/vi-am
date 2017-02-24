@@ -100,7 +100,7 @@ class AppFactory
         'label' => __('WC', TD),
         'value_before' => false,
         'value_after' => ' db',
-        'in_list' => true,
+        'in_list' => false,
         'list_label' => __('WC', TD),
         'param' => true,
       ),

@@ -224,6 +224,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2efef', end
 }
 /* END Avada Menü fix */
 
+.circle-frame{
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  border-radius: 400px;
+  display: block;
+  border: 5px solid #ffffff;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 110%;
+    max-height: 110%;
+    width: auto;
+    max-width: initial;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+
+  &.frame-size-1p3{
+    width: 220px;
+    height: 220px;
+    -webkit-border-radius: 220px;
+    -moz-border-radius: 220px;
+    border-radius: 220px;
+  }
+
+  &.frame-size-1p4{
+    width: 180px;
+    height: 180px;
+    -webkit-border-radius: 180px;
+    -moz-border-radius: 180px;
+    border-radius: 180px;
+  }
+}
+
 .fusion-separator.sep-shadow:after{
   background: radial-gradient(ellipse at 50% -50%, rgba(62, 94, 139, 0.38) 0px, rgba(255, 255, 255, 0) 65%);
 }
