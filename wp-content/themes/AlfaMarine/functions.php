@@ -8,6 +8,8 @@
   define( 'DOMAIN', $_SERVER['HTTP_HOST'] );
   define( 'FB_APP_ID', '167138103787862' );
   define( 'GOOGLE_API_KEY', '');
+  define( 'CAPTCHA_PUBLIC', '6LdL5RYUAAAAAFG-u_A2dkZtr1fpr71i4JSfq1DY');
+  define( 'CAPTCHA_PRIVATE', '6LdL5RYUAAAAAPKn0YlwmtgXDlIe5YAyvOi7qJyh');
 
   // Routes
   define( 'ROOT', str_replace(get_option('siteurl'), '//'.DOMAIN, get_stylesheet_directory_uri()) );
@@ -23,6 +25,7 @@
   {
       wp_enqueue_style( 'avada-parent-stylesheet', get_template_directory_uri() . '/style.css?t=' . ( (DEVMODE === true) ? time() : '' )  );
       wp_enqueue_style( 'avada-child-stylesheet', ROOT . '/style.css?' . ( (DEVMODE === true) ? time() : '' ) );
+      wp_enqueue_script( 'captcha', '//www.google.com/recaptcha/api.js' );
   }
   add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
@@ -34,10 +37,15 @@
   function app_init_settings()
   {
     global $app;
+
     add_post_type_support( 'post', 'excerpt' );
     create_custom_posttypes();
 
     $app = new AppFactory();
+
+    // Ajax kérések
+    $ajax = new AjaxRequests();
+    $ajax->send_contact_message();
   }
   add_action( 'init', 'app_init_settings' );
 

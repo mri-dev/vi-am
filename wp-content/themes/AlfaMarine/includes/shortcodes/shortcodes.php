@@ -5,4 +5,5 @@
   require_once "Tagline-Shares.php";
   require_once "PostsList.php";
   require_once "Tours.php";
+  require_once "ContactSC.php";
 ?>

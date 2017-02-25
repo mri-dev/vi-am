@@ -224,48 +224,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2efef', end
 }
 /* END Avada Menü fix */
 
-.circle-frame{
-  position: relative;
-  overflow: hidden;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  -webkit-border-radius: 400px;
-  -moz-border-radius: 400px;
-  border-radius: 400px;
-  display: block;
-  border: 5px solid #ffffff;
-
-  img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 110%;
-    max-height: 110%;
-    width: auto;
-    max-width: initial;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-  }
-
-  &.frame-size-1p3{
-    width: 220px;
-    height: 220px;
-    -webkit-border-radius: 220px;
-    -moz-border-radius: 220px;
-    border-radius: 220px;
-  }
-
-  &.frame-size-1p4{
-    width: 180px;
-    height: 180px;
-    -webkit-border-radius: 180px;
-    -moz-border-radius: 180px;
-    border-radius: 180px;
-  }
-}
-
 .fusion-separator.sep-shadow:after{
   background: radial-gradient(ellipse at 50% -50%, rgba(62, 94, 139, 0.38) 0px, rgba(255, 255, 255, 0) 65%);
 }
@@ -1449,6 +1407,127 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bde3fa', e
     color: white;
   }
 }
+
+.sc-contact-holder{
+  &.view-v1 {
+    background: $color-sec;
+    color: white;
+    padding: 25px;
+
+    h2 {
+      color: white;
+      margin: 0 0 15px 0;
+      font-size: 2.2em;
+    }
+
+    .head {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+
+    #remsg{
+      font-size: 0.8em;
+      margin: 10px 5px;
+
+      .error {
+        background: $color-red;
+        color: white;
+        padding: 10px;
+      }
+    }
+
+    .form-holder{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 0.9em;
+      color: #b6c3e1;
+
+      .fwrapper{
+        padding: 5px;
+
+        label {
+          margin-bottom: 5px;
+          display: block;
+        }
+
+        input, select, textarea {
+          font-size: 1.1em;
+          background: white;
+          border: none;
+          height: 35px;
+          line-height: 35px;
+          padding: 0 8px;
+          color: #5f6471;
+          display: block;
+          width: 100%;
+
+          &.missing {
+            border: 4px solid #fd414b;
+          }
+        }
+
+        textarea{
+          line-height: 1.5;
+          height: auto;
+          min-height: 150px;
+          padding: 10px;
+        }
+      }
+
+      .inp-vezeteknev {
+        flex-basis: 25%;
+      }
+      .inp-keresztnev {
+        flex-basis: 25%;
+      }
+      .inp-email {
+        flex-basis: 30%;
+      }
+      .inp-telefon {
+        flex-basis: 20%;
+      }
+      .inp-subject {
+        flex-basis: 70%;
+      }
+      .inp-kategoria {
+        flex-basis: 30%;
+      }
+      .inp-message {
+        flex-basis: 100%;
+      }
+    }
+    .captcha {
+      padding: 5px;
+    }
+    .sub-form{
+      padding: 0 5px;
+
+      button.in-progress {
+        background: orange !important;
+        border: 2px solid darken(orange, 10%);
+      }
+      button.sended {
+        background: #6ec051 !important;
+        border: 2px solid darken(#6ec051, 10%);
+      }
+    }
+  }
+}
+
+.fusion-button.button-red,
+.fusion-button.button-red:focus{
+  background: $color-red;
+  color: white;
+
+  &:hover {
+    background: darken($color-red, 10%);
+    color: white;
+  }
+}
+
 /* Footer */
 .fusion-footer{
   position: relative;
