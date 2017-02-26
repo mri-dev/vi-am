@@ -5,6 +5,10 @@ body, html {
   max-height: 100%;
 }
 
+#main .post h2, #main .reading-box h2, #main h2, .ei-title h2, .fusion-modal h2, .fusion-title h2, .fusion-widget-area h2, .main-flex .slide-content h2, .post-content h2, .title h2{
+  font-size: 30px;
+}
+
 /* Avada Menü fix */
 .fusion-main-menu > ul > li > a{
   text-transform: uppercase;
@@ -1525,6 +1529,49 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bde3fa', e
   &:hover {
     background: darken($color-red, 10%);
     color: white;
+  }
+}
+
+.circle-frame {
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+
+
+  max-height: 400px;
+  height: 400px;
+  width: 400px;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  border-radius: 400px;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 110%;
+    max-height: 110%;
+    width: auto;
+    max-width: initial;
+    transform: translate(-50%, -50%);
+  }
+
+  &.frame-size-1p4 {
+    max-height: 200px;
+    height: 200px;
+    width: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+  }
+  &.frame-size-1p3 {
+    max-height: 320px;
+    height: 320px;
+    width: 320px;
+    -webkit-border-radius: 320px;
+    -moz-border-radius: 320px;
+    border-radius: 320px;
   }
 }
 
