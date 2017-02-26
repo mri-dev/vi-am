@@ -1575,6 +1575,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bde3fa', e
   }
 }
 
+.blue-bg-overlay-p80{
+  background: rgba(34, 59, 115, 0.80);
+  border: 5px solid rgb(255, 255, 255);
+  border-left: none;
+  border-right: none;
+}
+
 /* Footer */
 .fusion-footer{
   position: relative;
