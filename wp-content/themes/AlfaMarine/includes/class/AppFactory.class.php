@@ -26,10 +26,61 @@ class AppFactory
   protected function init()
   {
     $this->tours_metakeys = array(
-      self::APP_PREFIX.'ar' => array(
-        'label' => __('Ár', TD),
+      self::APP_PREFIX.'korosztaly' => array(
+        'label' => __('Korosztály', TD),
         'value_before' => false,
         'value_after' => false,
+        'in_list' => false,
+        'param' => true,
+      ),
+      self::APP_PREFIX.'ar_belfold' => array(
+        'label' => __('Ár (Balatonon)', TD),
+        'value_before' => false,
+        'value_after' => 'Ft / fő / nap',
+        'in_list' => false,
+        'param' => true,
+      ),
+      self::APP_PREFIX.'ar_kulfold' => array(
+        'label' => __('Ár (Külföld)', TD),
+        'value_before' => '€',
+        'value_after' => '/ fő / hét',
+        'in_list' => false,
+        'param' => true,
+      ),
+      self::APP_PREFIX.'reszvevok_belfold' => array(
+        'label' => __('Résztvevők száma (Belföld)', TD),
+        'value_before' => false,
+        'value_after' => 'db',
+        'in_list' => false,
+        'param' => true,
+      ),
+      self::APP_PREFIX.'reszvevok_kulfold' => array(
+        'label' => __('Résztvevők száma (Külföld)', TD),
+        'value_before' => false,
+        'value_after' => 'db',
+        'in_list' => false,
+        'param' => true,
+      ),
+      self::APP_PREFIX.'reszvevok_belfold' => array(
+        'label' => __('Résztvevők száma (Belföld)', TD),
+        'value_before' => false,
+        'value_after' => 'db',
+        'in_list' => false,
+        'param' => true,
+      ),
+
+
+      self::APP_PREFIX.'minido_belfold' => array(
+        'label' => __('Minimális időtartam (Belföld)', TD),
+        'value_before' => false,
+        'value_after' => 'nap',
+        'in_list' => false,
+        'param' => true,
+      ),
+      self::APP_PREFIX.'minido_kulfold' => array(
+        'label' => __('Minimális időtartam (Külföld)', TD),
+        'value_before' => false,
+        'value_after' => 'nap',
         'in_list' => false,
         'param' => true,
       ),
