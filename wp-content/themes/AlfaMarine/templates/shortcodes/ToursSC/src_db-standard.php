@@ -7,16 +7,31 @@
     <div class="img">
       <?php
         $img = $post->Image();
+        $kiemelt = $post->isHighlighted();
+        $exkluziv = $post->isExclusive();
       ?>
+      <div class="flags">
+        <?php if ($exkluziv): ?>
+          <div class="flag flag-exclusive">
+            <div class="excstars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <?php echo __('exkluzív', TD); ?>
+          </div>
+        <?php endif; ?>
+        <?php if ($kiemelt): ?>
+          <div class="flag flag-highlight">
+            <i class="fa fa-bullhorn"></i> <?php echo __('kiemelt', TD); ?>
+          </div>
+        <?php endif; ?>
+      </div>
       <a href="<?php echo get_permalink($post->ID()); ?>"><img src="<? echo $img; ?>" alt="<?php echo $post->Title(); ?>"></a>
     </div>
     <?php if (true): ?>
       <div class="after-image-info">
-        <div class="rundate" title='<?php echo __('Szezon ideje', TD); ?>'>
-          <i class="fa fa-calendar"></i> <strong><?php echo $post->SeasonDate(); ?></strong>
+        <div class="rundate" title='<?php echo __('Minimális túra ideje', TD); ?>'>
+          <i class="fa fa-calendar"></i> <?php echo $post->DateInfos(); ?>
         </div>
         <?php $price = $post->Price(); if($price): ?>
-        <div class="price">
+        <div class="price" title='<?php echo __('Balatoni túra esetén értendő alapár', TD); ?>'>
           <?php echo $price; ?>
         </div>
         <?php endif; ?>
@@ -24,14 +39,11 @@
       </div>
     <?php endif; ?>
     <div class="desc">
-      <div class="desc-wrapper">
-        <?php echo $post->Excerpt(); ?>
-      </div>
+      <?php echo $post->Excerpt(); ?>
       <div class="clearfix"></div>
       <?php if (true): ?>
-        <div class="more-info">
-          <div><i class="fa fa-user-circle-o"></i> <?php echo sprintf(__('Maximum <strong>%d</strong> fő', TD), $post->MaxFo()); ?></div>
-
+        <div class="more-info" title="<?php echo __('Résztvevők száma (min-max)', TD); ?>">
+          <div><i class="fa fa-user-circle-o"></i> <?php echo $post->MaxFo(); ?></div>
         </div>
       <?php endif; ?>
       <a class="post-read" href="<?php echo get_permalink($post->ID()); ?>"><?php echo __( 'Túra részletei' ,TD) ?></a>

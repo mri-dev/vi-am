@@ -6,4 +6,5 @@
   require_once "PostsList.php";
   require_once "Tours.php";
   require_once "ContactSC.php";
+  require_once "TourParameter.php";
 ?>

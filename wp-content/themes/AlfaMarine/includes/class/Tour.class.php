@@ -91,12 +91,16 @@
 
     public function MaxFo()
     {
-      return (int)8;
+      $belfold = get_post_meta($this->ID(), parent::APP_PREFIX.'reszvevok_belfold', true);
+      $kulfold = get_post_meta($this->ID(), parent::APP_PREFIX.'reszvevok_kulfold', true);
+      return
+        '<span class="belfold">'.sprintf(__('Balaton: <strong>%s fő</strong>', TD), $belfold).'</span>'.
+        (!empty($kulfold) ? ', <span class="kulfold">'.sprintf(__('Tenger: <strong>%s fő</strong>', TD), $kulfold).'</span>' : '');
     }
 
     public function Price()
     {
-      $price = get_post_meta($this->ID(), self::APP_PREFIX.'ar', true);
+      $price = get_post_meta($this->ID(), parent::APP_PREFIX.'ar_belfold', true);
 
       if(empty($price)) return false;
 
@@ -111,6 +115,16 @@
     {
       return date(get_option('date_format', '')) . ' &mdash; '.date(get_option('date_format', ''));
     }
+
+    public function DateInfos()
+    {
+      $belfold = get_post_meta($this->ID(), parent::APP_PREFIX.'minido_belfold', true);
+      $kulfold = get_post_meta($this->ID(), parent::APP_PREFIX.'minido_kulfold', true);
+      return
+        '<span class="belfold">'.sprintf(__('Balaton: <strong>%s</strong>', TD), $belfold).'</span>'.
+        (!empty($kulfold) ? ', <span class="kulfold">'.sprintf(__('Tenger: <strong>%s</strong>', TD), $kulfold).'</span>' : '');
+    }
+
 
     public function ID()
     {

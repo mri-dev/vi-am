@@ -46,6 +46,9 @@
     // Ajax kérések
     $ajax = new AjaxRequests();
     $ajax->send_contact_message();
+
+
+    add_filter('upload_mimes', 'app_mime_types');
   }
   add_action( 'init', 'app_init_settings' );
 
@@ -137,6 +140,15 @@
 
     $tours->create();
     add_post_type_support( 'tours', 'excerpt' );
+  }
+
+  /**
+  * SVG engedélyezése
+  **/
+  function app_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
+    return $mimes;
   }
 
   /**

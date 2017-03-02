@@ -31,7 +31,7 @@ class ToursSC
               'order' => 'DESC',
               'control' => 1,
               'autocat' => 0,
-              'exc_id' => false
+              'exc_id' => ''
             )
         );
         /* Parse the arguments. */
@@ -69,6 +69,8 @@ class ToursSC
         //$exc_ids[] = (int) $this->attr['exc_id'];
       }
 
+      $excid = (empty($this->attr['exc_id'])) ? array() : explode(",", $this->attr['exc_id']);
+
       $paged = (get_query_var('page')) ? get_query_var('page') : 0;
       $qryparam = array(
         'post_type' => 'tours',
@@ -76,7 +78,7 @@ class ToursSC
         'order' => $this->attr['order'],
         'posts_per_page' => $this->attr['limit'],
         'paged' => $paged,
-        'post__not_in' => $exc_ids
+        'post__not_in' => $excid
       );
 
       // Tax query

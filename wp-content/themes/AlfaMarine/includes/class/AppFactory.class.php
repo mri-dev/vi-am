@@ -32,57 +32,63 @@ class AppFactory
         'value_after' => false,
         'in_list' => false,
         'param' => true,
+        'list_label' => __('Kiknek ajánljuk', TD),
+        'global' => true
       ),
       self::APP_PREFIX.'ar_belfold' => array(
         'label' => __('Ár (Balatonon)', TD),
         'value_before' => false,
-        'value_after' => 'Ft / fő / nap',
+        'value_after' => false,
         'in_list' => false,
         'param' => true,
+        'list_label' => __('Részvételi díj', TD),
+        'global' => false
       ),
       self::APP_PREFIX.'ar_kulfold' => array(
         'label' => __('Ár (Külföld)', TD),
-        'value_before' => '€',
-        'value_after' => '/ fő / hét',
+        'value_before' => false,
+        'value_after' => false,
         'in_list' => false,
         'param' => true,
+        'list_label' => __('Részvételi díj', TD),
+        'global' => false
       ),
       self::APP_PREFIX.'reszvevok_belfold' => array(
         'label' => __('Résztvevők száma (Belföld)', TD),
         'value_before' => false,
-        'value_after' => 'db',
+        'value_after' => false,
         'in_list' => false,
         'param' => true,
+        'list_label' => __('Utasok száma (min-max)', TD),
+        'global' => false
       ),
       self::APP_PREFIX.'reszvevok_kulfold' => array(
         'label' => __('Résztvevők száma (Külföld)', TD),
         'value_before' => false,
-        'value_after' => 'db',
+        'value_after' => false,
         'in_list' => false,
         'param' => true,
+        'list_label' => __('Utasok száma (min-max)', TD),
+        'global' => false
       ),
-      self::APP_PREFIX.'reszvevok_belfold' => array(
-        'label' => __('Résztvevők száma (Belföld)', TD),
-        'value_before' => false,
-        'value_after' => 'db',
-        'in_list' => false,
-        'param' => true,
-      ),
-
 
       self::APP_PREFIX.'minido_belfold' => array(
         'label' => __('Minimális időtartam (Belföld)', TD),
         'value_before' => false,
-        'value_after' => 'nap',
+        'value_after' => false,
         'in_list' => false,
         'param' => true,
+        'list_label' => __('Minimális időtartam', TD),
+        'global' => false
       ),
       self::APP_PREFIX.'minido_kulfold' => array(
         'label' => __('Minimális időtartam (Külföld)', TD),
         'value_before' => false,
-        'value_after' => 'nap',
+        'value_after' => false,
         'in_list' => false,
         'param' => true,
+        'list_label' => __('Minimális időtartam', TD),
+        'global' => false
       ),
     );
 

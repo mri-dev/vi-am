@@ -27,11 +27,11 @@
     </div>
     <?php if ($i == 1): ?>
       <div class="after-image-info">
-        <div class="rundate" title='<?php echo __('Szezon ideje', TD); ?>'>
-          <i class="fa fa-calendar"></i> <strong><?php echo $post->SeasonDate(); ?></strong>
+        <div class="rundate" title='<?php echo __('Minimális túra ideje', TD); ?>'>
+          <i class="fa fa-calendar"></i> <?php echo $post->DateInfos(); ?>
         </div>
         <?php $price = $post->Price(); if($price): ?>
-        <div class="price">
+        <div class="price" title='<?php echo __('Balatoni túra esetén értendő alapár', TD); ?>'>
           <?php echo $price; ?>
         </div>
         <?php endif; ?>
@@ -42,9 +42,8 @@
       <?php echo $post->Excerpt(); ?>
       <div class="clearfix"></div>
       <?php if ($i == 1): ?>
-        <div class="more-info">
-          <div><i class="fa fa-user-circle-o"></i> <?php echo sprintf(__('Maximum <strong>%d</strong> fő', TD), $post->MaxFo()); ?></div>
-
+        <div class="more-info" title="<?php echo __('Résztvevők száma (min-max)', TD); ?>">
+          <div><i class="fa fa-user-circle-o"></i> <?php echo $post->MaxFo(); ?></div>
         </div>
       <?php endif; ?>
       <a class="post-read" href="<?php echo get_permalink($post->ID()); ?>"><?php echo __( 'Túra részletei' ,TD) ?></a>

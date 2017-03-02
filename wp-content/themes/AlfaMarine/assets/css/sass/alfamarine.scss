@@ -137,6 +137,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2efef', end
    }
 }
 
+.home-h1-title{
+  color: white;
+  h1 {
+    line-height: 1.1;
+    color: #48afda;
+  }
+  span.popuph1 {
+    display: block;
+    color: #ffffff;
+    font-size: 75px;
+  }
+
+  h2 {
+    margin: 25px 0 0 0;
+    line-height: 1.2 !important;
+    color: white;
+  }
+}
+
 .fusion-megamenu-wrapper .fusion-megamenu-submenu .sub-menu{
   -webkit-transform: none;
   -moz-transform: none;
@@ -989,6 +1008,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
             -moz-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
           }
+
+          .flags {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            pointer-events: none;
+            .flag {
+              background: #555555;
+              color: white;
+              text-transform: uppercase;
+              font-size: 0.75em;
+              margin: 8px 0;
+              padding: 4px 8px;
+
+              -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+              -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+              box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+
+              &.flag-highlight{
+                background: #c92e36;
+              }
+
+              &.flag-exclusive{
+                color: #f5c65e;
+                background: #222222;
+              }
+            }
+          }
         }
         .after-image-info{
           background: #f1f1f1;
@@ -1020,7 +1068,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
           }
         }
         .desc {
-          padding: 0;
+          padding: 5px 0;
           width: 100%;
           font-size: 0.95em;
           text-align: justify;
@@ -1155,18 +1203,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
           }
         }
         .after-image-info{
-          background: #f1f1f1;
+          background: #333637;
           padding: 10px;
           text-align: center;
           font-size: 0.8em;
-          color: $color-pr-dark;
+          color: #44c2ff;
           position: relative;
 
           .rundate {
             padding: 5px 0 0 0;
-            font-size: 0.9em;
+            font-size: 1.1em;
 
-            strong {
+            em {
+              color: #9a9a9a;
               font-size: 0.9em;
             }
           }
@@ -1214,8 +1263,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
           border-radius: 2px;
           text-transform: uppercase;
           display: block;
-          float: right;
-          width: 55%;
+          width: 100%;
           height: 28px;
           line-height: 28px;
 
@@ -1229,8 +1277,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
           border: 1px solid #c3c3c3;
           font-family: 'Oswald';
           padding: 4px 3px;
-          float: left;
-          width: 40%;
+          margin: 5px 0;
+          width: 100%;
           font-size: 1.1em;
           color: #5f5f5f;
 
@@ -1240,9 +1288,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
           }
 
           div {
-            text-align: center;
+            text-align: left;
             position: relative;
-            padding: 0 13px;
+            padding: 0 5px;
             margin: 0 -1px;
             font-size: 1em;
 
@@ -1617,6 +1665,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bde3fa', e
       button.sended {
         background: #6ec051 !important;
         border: 2px solid darken(#6ec051, 10%);
+      }
+    }
+  }
+}
+
+.sc-tour-parameter-holder{
+  &.view-v1{
+    .params{
+      -webkit-box-shadow: 2px 2px 15px -6px #000000;
+      -moz-box-shadow: 2px 2px 15px -6px #000000;
+      box-shadow: 2px 2px 15px -6px #000000;
+      .param{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        border-bottom: 1px solid #dae0ee;
+        line-height: 1.1;
+
+        .head{
+          background: $color-sec;
+          color: white;
+          flex-basis: 50%;
+          padding: 10px;
+          font-size: 0.9em;
+        }
+        .value {
+          background: #ffffff;
+          flex-basis: 50%;
+          padding: 10px;
+          font-weight: bold;
+          font-size: 1.1em;
+        }
+
+        &:last-child{
+          border-bottom: none;
+        }
       }
     }
   }
