@@ -65,10 +65,6 @@ class ToursSC
       $parent = false;
       $exc_ids = array();
 
-      if ($this->attr['exc_id'] !== false) {
-        //$exc_ids[] = (int) $this->attr['exc_id'];
-      }
-
       $excid = (empty($this->attr['exc_id'])) ? array() : explode(",", $this->attr['exc_id']);
 
       $paged = (get_query_var('page')) ? get_query_var('page') : 0;
@@ -85,7 +81,7 @@ class ToursSC
       if($this->attr['autocat'] == 1) {
         $termobj = get_queried_object();
         if($termobj) {
-          $qryparam['tax_query'] = array(
+          $qryparam['tax_query'][] = array(
             array(
               'taxonomy' => 'tour_category',
               'field' => 'ID',
@@ -93,11 +89,37 @@ class ToursSC
             )
           );
         }
+        $price_by = ( $termobj->slug == 'tengeri-turak') ? 'kulfold' : 'belfold';
       }
 
-      if ($this->attr['control'] == 1) {
+      if(isset($_GET['c']) && !empty($_GET['c']))
+      {
+        $cat = $_GET['c'];
+
+        $qryparam['tax_query'][] = array(
+          array(
+            'taxonomy' => 'tour_category',
+            'field' => 'slug',
+            'terms' => $cat
+          )
+        );
+      }
+
+      if(isset($cat)) {
+        $price_by = ( $cat == 'tengeri-turak') ? 'kulfold' : 'belfold';
+      }
+
+      if ($this->attr['control'] == 1)
+      {
+          $srcname = '';
+
+          if(isset($cat)) {
+            $srcname .= ( $cat == 'tengeri-turak') ? ' Tengeri ' : 'Balatoni ';
+          }
+
+          $srcname .= $termobj->name;
           $o .= '<div class="sc-header">';
-          $o .= '<h1 class="heading">'.sprintf(__('Válasszon <strong>%s</strong> közül', TD), $termobj->name).'</h1>';
+          $o .= '<h1 class="heading">'.sprintf(__('Válasszon <strong>%s</strong> közül', TD), $srcname).'</h1>';
           $o .= '</div>';
       }
 
@@ -114,9 +136,13 @@ class ToursSC
 
         while ( $pages->have_posts() )
         {
+          $tour_arg = array(
+            'price_by' => $price_by
+          );
+
           $pages->the_post();
           $i++;
-          $tour = new Tour(get_the_ID());
+          $tour = new Tour(get_the_ID(), $tour_arg);
           $data['i'] = $i;
           $data['post'] = $tour;
 

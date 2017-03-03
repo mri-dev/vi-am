@@ -31,7 +31,7 @@
           <i class="fa fa-calendar"></i> <?php echo $post->DateInfos(); ?>
         </div>
         <?php $price = $post->Price(); if($price): ?>
-        <div class="price" title='<?php echo __('Balatoni túra esetén értendő alapár', TD); ?>'>
+        <div class="price" title='<?=($post->show_price_by == 'belfold') ? __('Balatoni túra esetén értendő alapár', TD) :  __('Tengeri túra esetén értendő alapár', TD)?>'>
           <?php echo $price; ?>
         </div>
         <?php endif; ?>

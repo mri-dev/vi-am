@@ -6,10 +6,16 @@
 
     private $id = false;
     private $data = array();
+    public $show_price_by = 'belfold';
 
-    public function __construct( $id = false )
+    public function __construct( $id = false, $arg = array() )
     {
       parent::__construct();
+
+      if(isset($arg['price_by'])) {
+        $this->show_price_by = $arg['price_by'];
+      }
+
       $this->id = $id;
       $this->load();
       return $this;
@@ -100,7 +106,8 @@
 
     public function Price()
     {
-      $price = get_post_meta($this->ID(), parent::APP_PREFIX.'ar_belfold', true);
+      $pb = $this->show_price_by;
+      $price = get_post_meta($this->ID(), parent::APP_PREFIX.'ar_'.$pb, true);
 
       if(empty($price)) return false;
 
