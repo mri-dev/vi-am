@@ -93,13 +93,6 @@ class AppFactory
     );
 
     $this->boats_metakeys = array(
-      self::APP_PREFIX.'gyartasi_ev' => array(
-        'label' => __('Gyártási év', TD),
-        'value_before' => false,
-        'value_after' => false,
-        'in_list' => false,
-        'param' => true,
-      ),
       self::APP_PREFIX.'hossza' => array(
         'label' => __('Hossz', TD),
         'value_before' => false,
@@ -119,6 +112,13 @@ class AppFactory
         'label' => __('Merülés', TD),
         'value_before' => false,
         'value_after' => ' m',
+        'in_list' => false,
+        'param' => true,
+      ),
+      self::APP_PREFIX.'vitorlazat' => array(
+        'label' => __('Vitorlázat', TD),
+        'value_before' => false,
+        'value_after' => ' nm',
         'in_list' => false,
         'param' => true,
       ),
@@ -154,7 +154,7 @@ class AppFactory
         'param' => true,
       ),
       self::APP_PREFIX.'wc' => array(
-        'label' => __('WC', TD),
+        'label' => __('WC / Zuhany', TD),
         'value_before' => false,
         'value_after' => ' db',
         'in_list' => false,
