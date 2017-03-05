@@ -632,7 +632,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
 
         .param {
           flex-basis: calc(100%/3);
-          font-size: 0.65em;
+          font-size: 0.85em;
           text-transform: uppercase;
           font-family: 'Oswald';
           padding: 0 5px;
@@ -1177,6 +1177,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
             line-height: 1;
             font-weight: normal;
             font-family: 'Oswald';
+            height: 26px;
           }
         }
 
@@ -1247,6 +1248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
             margin: 5px 0;
             overflow: hidden;
             max-height: 90px;
+            height: 90px;
           }
         }
         a.post-read {
