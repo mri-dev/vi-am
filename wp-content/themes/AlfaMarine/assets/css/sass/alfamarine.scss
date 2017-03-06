@@ -582,7 +582,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
 
   &.style-standard{
     .vehicle-list-item{
-      flex-basis: calc(100%/4);
+      flex-basis: calc(100%/3);
       margin-bottom: 15px;
 
       .item-wrapper{
@@ -600,14 +600,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
           text-align: center;
           display: block;
           text-align: center;
-          font-size: 0.9em;
-          padding: 10px;
+          font-size: 1.1em;
+          padding: 15px;
         }
       }
 
       .img {
-        max-height: 200px;
-        height: 200px;
+        max-height: 300px;
+        height: 300px;
         overflow: hidden;
         position: relative;
 
@@ -632,11 +632,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
 
         .param {
           flex-basis: calc(100%/3);
-          font-size: 0.85em;
+          font-size: 1em;
           text-transform: uppercase;
           font-family: 'Oswald';
           padding: 0 5px;
-          line-height: 36px;
+          line-height: 45px;
           border: 1px solid #dadada;
           text-align: left;
 
@@ -650,7 +650,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
             text-align: right;
             color: white;
             background: #75abd4;
-            font-size: 0.8em;
+            font-size: 1.1em;
 
             .value {
               color: white;
@@ -663,7 +663,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd0f0', end
         margin-top: -5px;
         a {
           background: #dedede;
-          padding: 5px;
+          padding: 10px;
           text-align: center;
           margin: 0 auto;
           display: block;

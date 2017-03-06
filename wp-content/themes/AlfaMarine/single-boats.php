@@ -46,11 +46,6 @@
       </div>
     <?php endif; ?>
 
-    <a name="tours"></a>
-    <div class="related-list">
-      <h2><?php echo __('Túrák a hajóval', TD); ?></h2>
-        <?php echo do_shortcode('[tours view="byboat" control="0" limit="4" orderby="rand" boatid="'.$boat->ID().'"]'); ?>
-    </div>
     <div class="related-list">
       <h2><?php echo __('További hajóink', TD); ?></h2>
       <?php echo do_shortcode('[vehicles view="standard" control="0" orderby="rand" excid="'.$boat->ID().'"]'); ?>
