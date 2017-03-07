@@ -6,11 +6,64 @@
   .fusion-footer footer.fusion-footer-widget-area .widget_nav_menu{
     margin-top: 30px;
   }
+  body.single-tours .header,
+  body.single-tours #main .page-wrapper,
+  body.single-tours #main .page-wrapper-row .fusion-row{
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item{
+    flex-basis: calc(100% / 2);
+  }
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .img{
+    height: 260px;
+    max-height: 260px;
+  }
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper{
+    padding: 10px;
+  }
+  .sc-tourssc-src_db-holder.style-byboat .list-wrapper{
+    padding: 0 15px;
+  }
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .title h4{
+    height: auto;
+    max-height: initial;
+    margin: 5px 0 10px 0;
+  }
 }
 
 @media only screen and (max-width: 768px){
+
   #main {
-    padding: 10px !important;
+    padding: 10px 10px 100px 10px !important;
+  }
+  .fusion-header-v4{
+    padding: 0;
+  }
+  body.single-tours #main .fusion-column-wrapper{
+    padding: 0 15px;
+  }
+  .sc-tour-parameter-holder.view-v1 .params{
+    font-size: 0.8em;
+  }
+  .fusion-header-v4.fusion-mobile-menu-design-modern .fusion-mobile-menu-icons{
+    top: 10px;
+    right: 10px;
+    a{
+      font-size: 32px;
+    }
+  }
+  .fusion-social-networks{
+    line-height: 32px;
+    display: block;
+  }
+  .fusion-social-networks .fusion-social-networks-wrapper{
+    margin: 0;
+  }
+  .fusion-secondary-main-menu{
+    margin-top: 20px;
+    background-image: none;
   }
   .logo-slogan{
     position: relative;
@@ -27,7 +80,7 @@
   .fusion-header-v4 .fusion-logo .fusion-header-content-3-wrapper{
     text-align: center;
     display: block;
-
+    padding: 0;
   }
   .home-about-info{
     padding: 15px !important;
@@ -41,10 +94,12 @@
     h1{
       font-size: 1.8em !important;
       line-height: 1.3;
+      color:$color-sec !important;
 
       .popuph1 {
         font-size: 1.1em;
         line-height: 1.3;
+        color: white !important;
       }
     }
 
@@ -74,18 +129,7 @@
     height: auto;
     max-height: initial;
   }
-  .sc-tourssc-src_db-holder.style-home .tour-list-item{
-    width: 100%;
-  }
-  .sc-tourssc-src_db-holder.style-home .tour-list-item.item1:after{
-    display: none;
-  }
-  .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img img{
-    max-width: initial;
-    width: auto;
-    height: 105%;
-    max-height: 105%;
-  }
+
   .sc-postslist-src_cat-holder.homepage .post-list-item:after{
     display: none;
   }
@@ -109,6 +153,7 @@
   }
   .fusion-copyright-notice{
     text-align: center;
+    font-size: 0.7em;
   }
   .fusion-footer footer.fusion-footer-widget-area{
     padding: 10px !important;
@@ -121,9 +166,69 @@
   footer .sailboat-draw{
     display: none;
   }
+
+  .gastro-info{
+    .fusion-imageframe{
+      margin: 10px 0;
+      display: block;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .sc-header{
+    line-height: 1.2;
+    margin: 10px 0;
+    h1{
+      line-height: 1.2;
+    }
+  }
+
+  .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title{
+    margin: 5px 0 !important;
+  }
+  .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info .price{
+    font-size: 1.4em;
+  }
+  .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info{
+    font-size: 0.64em;
+  }
+  .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .after-image-info .rundate i {
+    font-size: 14px;
+  }
+  .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .title h4{
+    font-size: 1.1em;
+  }
+  .fusion-body .fusion-page-title-bar{
+    display: none;
+  }
+  .boat-page .boat-page-top{
+    flex-wrap: wrap;
+  }
+  .boat-page .boat-page-top .images,
+  .boat-page .boat-page-top .datas{
+    flex-basis: 100%;
+  }
+  .boat-page .boat-page-top .datas .title h1{
+    text-align: center;
+    margin: 10px 0;
+  }
+  .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .img{
+    height: 250px;
+    max-height: 250px;
+  }
+  .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .after-image-info{
+    font-size: 0.6em;
+  }
 }
 
 @media only screen and (max-width: 480px){
+  #main {
+    padding: 10px !important;
+  }
   .fusion-footer:before{
     display: none !important;
   }
@@ -131,13 +236,137 @@
     margin-top: 5px;
   }
 
+  .sc-tourssc-src_db-holder.style-home .tour-list-item{
+    width: 100%;
+  }
+  .sc-tourssc-src_db-holder.style-home .tour-list-item.item1:after{
+    display: none;
+  }
+  .sc-tourssc-src_db-holder.style-home .tour-list-item .item-wrapper .img img{
+    max-width: initial;
+    width: auto;
+    height: 105%;
+    max-height: 105%;
+  }
+
+  .post-content h1{
+    line-height: 1.2;
+  }
+
+  .post-content h3{
+    line-height: 1.1;
+  }
+  .post-content h2{
+    line-height: 1.1;
+    text-align: center !important;
+    margin: 5px 0 20px 0;
+  }
+
+  .fusion-alignright,
+  .fusion-alignleft{
+    float: none;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+  }
+
+  .tour-info-links{
+    padding: 20px 0 !important;
+
+    .fusion-button {
+      margin: 10px 0;
+    }
+  }
+
+  body.single-tours #main .info-line .page-wrapper{
+    display: block;
+  }
+
+  body.single-tours #main .info-line .page-wrapper .icon{
+    flex-basis: 100%;
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+  body.single-tours #main .info-line .page-wrapper .con{
+    flex-basis: 100%;
+    width: 100%;
+    float: none;
+    padding: 0 15px;
+  }
+
+  .sc-contact-holder.view-v1{
+    font-size: 0.85em;
+    padding: 10px;
+  }
+  .sc-contact-holder.view-v1 .form-holder{
+    display: block;
+  }
+
+  .sc-contact-holder.view-v1 .form-holder > div{
+    display: block;
+    width: 100%;
+    flex-basis: 100%;
+    margin: 5px 0;
+  }
+  body.single-tours #main .contact .sc-contact-holder{
+    width: 100%;
+  }
+  body.single-tours #main .contact{
+    padding: 10px;
+  }
+
+  .sc-header h1 strong{
+    display: block;
+  }
+
+  .sc-tourssc-src_db-holder.style-byboat .list-wrapper{
+    padding: 0 15px;
+  }
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .title{
+    margin: 5px 0 !important;
+    height: auto;
+  }
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .title h4{
+    height: auto;
+    max-height: inherit;
+  }
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .desc .desc-wrapper{
+    height: auto;
+    max-height: initial;
+  }
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper{
+    padding: 5px 15px;
+  }
+  body.single-tours #main{
+    padding: 0 !important;
+  }
+
   .sc-postslist-src_cat-holder.grid-3x > .list-wrapper > article,
+  .sc-tourssc-src_db-holder.style-standard .tour-list-item,
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item,
   .sc-vehiclessc-db-holder.style-standard .vehicle-list-item{
     flex-basis: 100%;
   }
-  .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .img{
-    height: 550px;
-    max-height: 550px;
+  .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .img,
+  .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .img,
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .img{
+    height: auto;
+    max-height: initial;
+  }
+  .sc-vehiclessc-db-holder.style-standard .vehicle-list-item .img img,
+  .sc-tourssc-src_db-holder.style-standard .tour-list-item .item-wrapper .img img,
+  .sc-tourssc-src_db-holder.style-byboat .tour-list-item .item-wrapper .img img{
+    height: auto;
+    max-height: initial;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
   }
   .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .img,
   .sc-postslist-src_cat-holder.style-default .post-list-item .item-wrapper .img img{

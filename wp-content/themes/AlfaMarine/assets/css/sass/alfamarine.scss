@@ -89,6 +89,19 @@ body, html {
     margin-left: 5px;
   }
 }
+.tour-info-links{
+  padding: 80px 0 200px 0 !important;
+
+  .fusion-button {
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.4) !important;
+    color: $color-sec !important;
+  }
+  .fusion-button:hover {
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.93) !important;
+  }
+}
 .fusion-megamenu{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2efef+0,fffcfc+100 */
 background: rgb(242,239,239); /* Old browsers */
