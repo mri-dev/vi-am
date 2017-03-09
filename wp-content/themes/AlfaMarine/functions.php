@@ -26,8 +26,22 @@
       wp_enqueue_style( 'avada-parent-stylesheet', get_template_directory_uri() . '/style.css?t=' . ( (DEVMODE === true) ? time() : '' )  );
       wp_enqueue_style( 'avada-child-stylesheet', ROOT . '/style.css?' . ( (DEVMODE === true) ? time() : '' ) );
       wp_enqueue_script( 'captcha', '//www.google.com/recaptcha/api.js' );
+      wp_enqueue_script( 'cookie', ROOT . '/assets/vendor/jquery.cookie.js', array('jquery') );
+      wp_enqueue_script( 'cookieAccepter', ROOT . '/assets/vendor/jquery.cookieaccept.js', array('jquery') );
+
   }
   add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
+  function custom_scripts()
+  {
+    echo "<script>
+        (function($){
+          console.log(1);
+          $.cookieAccepter('/adatvedelmi-szabalyzat/');
+        })(jQuery);
+    </script>";
+  }
+  add_action( 'wp_footer', 'custom_scripts');
 
   /**
   * Konfig beállítások
