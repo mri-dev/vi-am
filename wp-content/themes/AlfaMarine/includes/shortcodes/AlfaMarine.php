@@ -70,7 +70,7 @@ class AlfaMarine
 
     private function data_facebookbox()
     {
-      $o = '<div class="footer-facebook-likebox"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=340&height=214&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId='.FB_APP_ID.'" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>';
+      $o = '<div class="footer-facebook-likebox"><iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/Alfamarine.hu&tabs&width=340&height=214&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId='.FB_APP_ID.'" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>';
 
       return $o;
     }
